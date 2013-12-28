@@ -12,3 +12,11 @@ The STM32F405RG is a 32 bit ARM M4 CPU with some useful capabilities. Technical 
 Is the module that allows access to the internals of the chip. Initially designed for the 405RG chip noted above. There will be different targets for different chipsets.
 More information on teh exposed functionality is here: [[pyb module|pyb module]]
 
+###Limitations
+The entire standard python library is not supported. Sometime sthis is becasuse of the inapplicability to an embeded controller. Nevertheless the list is here: [Python 3.3 standard lib](http://docs.python.org/3/library/) The modules **NOT** covered are:
+
+* dbm
+* sqlite3
+* threading
+* multiprocessing
+
