@@ -3,7 +3,7 @@ This includes:
 * i2c
 * random
 * [[led|led_driver]] (pwm driver)
-* [[lcd driver|lcd_driver]]
+* [[lcd driver|LCD Driver]]
 * servo
 * accelerometer
 * clock functions
