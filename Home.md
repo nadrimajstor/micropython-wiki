@@ -13,7 +13,7 @@ Is the module that allows access to the internals of the chip. Initially designe
 More information on teh exposed functionality is here: [[pyb module|pyb module]]
 
 ###Limitations
-The entire standard python library is not supported. Sometime sthis is becasuse of the inapplicability to an embeded controller. Nevertheless the list is here: [Python 3.3 standard lib](http://docs.python.org/3/library/) The modules **NOT** covered are:
+The entire standard python library is not supported. Sometimes this is because of the inapplicability of a module to an embedded controller. Nevertheless the full list list is here: [Python 3.3 standard lib](http://docs.python.org/3/library/) The modules **NOT** covered are:
 
 * dbm
 * sqlite3
