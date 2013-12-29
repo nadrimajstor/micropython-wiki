@@ -5,7 +5,7 @@ This is the Micro Python project, which puts an implementation of Python 3.x on 
 ###What is Micro Python
 
 ### The Kickstarter board
-The STM32F405RG is a 32 bit ARM M4 CPU with some useful capabilities. Technical data on the chip is here: [STMS website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
+The STM32F405RG is a 32 bit ARM M4 CPU with some useful capabilities. Technical data on the chip is here: [STMicroelectronics website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
 ###Other hardware targets
 
 ###The [[pyb module|pyb module]]
