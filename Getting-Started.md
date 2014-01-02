@@ -56,6 +56,26 @@ This will generate the 'py' executable, which may be executed by:
 
 ### Fedora, CentOS, and Red Hat Enterprise Linux and variants
 
+The required packages can be installed with:
+
+> sudo yum install git gcc readline-devel
+
+Clone the git repository to your local machine:
+
+> git clone https://github.com/micropython/micropython.git
+
+Change directory to the Unix build directory:
+
+> cd ./micropython/unix
+
+And then make the executable
+
+> make
+
+At that point, you will have a functioning micropython executable, which may be launched with the command:
+
+> ./py
+
 ### ArchLinux
 
 ### Gentoo Linux
