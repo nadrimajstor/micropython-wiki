@@ -1,3 +1,5 @@
+Getting started with micropython development requires first building the appropriate binaries for your platform.
+
 ## UNIX
 
 ### Debian, Ubuntu, Mint, and variants
