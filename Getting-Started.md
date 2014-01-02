@@ -1,5 +1,3 @@
-# Getting Started with MicroPython
-
 ## UNIX
 
 ### Debian, Ubuntu, Mint, and variants
