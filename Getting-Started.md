@@ -34,9 +34,9 @@ At that point, you will have a functioning micropython executable, which may be 
  
 (Release 9.2 tested)
 
-Ensure that you have git and the GCC packages installed:
+Ensure that you have git, GCC, gmake, pythyon3, and bash packages installed:
 
-> [as root] pkg_add -r git gcc gmake
+> [as root] pkg_add -r git gcc gmake python3 bash
 
 Clone the git repository to your local machine:
 
