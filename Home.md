@@ -12,7 +12,7 @@ The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU,1 Mbyt
 
 ###Other hardware targets
 Future releases of micropython will support other microcontrollers and microcontroller families as well as dedicated third-party boards.
-* [[How to port micro python to a new hardware target]|[porting]
+* [[How to port micro python to a new hardware target]|[porting]]
 * device B
 * Implementation details:
     - [[i2c|i2c_info]]
