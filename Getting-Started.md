@@ -28,6 +28,30 @@ At that point, you will have a functioning micropython executable, which may be 
 
 > ./py
 
+### FreeBSD
+ 
+(Release 9.2 tested)
+
+Ensure that you have git and the GCC packages installed:
+
+> [as root] pkg_add -r git gcc gmake
+
+Clone the git repository to your local machine:
+
+> git clone https://github.com/micropython/micropython.git
+
+Change directory to the Unix build directory:
+
+> cd ./micropython/unix
+
+Edit main.c, replacing "malloc.h" with "stdlib.h", then:
+
+> gmake
+
+This will generate the 'py' executable, which may be executed by:
+
+> ./py
+
 ### Fedora, CentOS, and Red Hat Enterprise Linux and variants
 
 ### ArchLinux
