@@ -27,3 +27,9 @@ And then make the executable
 At that point, you will have a functioning micropython executable, which may be launched with the command:
 
 > ./py
+
+### Fedora, CentOS, and Red Hat Enterprise Linux and variants
+
+### ArchLinux
+
+### Gentoo Linux
