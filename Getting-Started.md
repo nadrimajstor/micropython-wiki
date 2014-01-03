@@ -79,3 +79,9 @@ At that point, you will have a functioning micropython executable, which may be 
 ### ArchLinux
 
 ### Gentoo Linux
+
+### Mac OSX
+
+OSX is only supported on the osx branch. First do :
+
+git checkout osx 
