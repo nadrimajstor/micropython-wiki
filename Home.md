@@ -10,13 +10,6 @@ Micro Python is Python interpreter (with partial native code emission feature). 
 ### The Kickstarter board
 The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU, 1 Mbyte Flash, 168 MHz). Technical data on the chip can be found here: [STMicroelectronics website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
 
-###Other hardware targets
-Future releases of micropython will support other microcontrollers and microcontroller families as well as dedicated third-party boards.
-* [[How to port micro python to a new hardware target|porting]]
-* device B
-* Implementation details:
-    - [[i2c|i2c_info]]
-
 ###The pyb module
 This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
 Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
@@ -34,6 +27,13 @@ Modules which will (at the moment) **NOT** be covered in micropython are:
 
 ### Development
 * [[Internals]] - some notes on VM/interpreter internals.
+
+####Other hardware targets
+Future releases of micropython will support other microcontrollers and microcontroller families as well as dedicated third-party boards.
+* [[How to port micro python to a new hardware target|porting]]
+* device B
+* Implementation details:
+    - [[i2c|i2c_info]]
 
 ### I want to try using micropython now!
 
