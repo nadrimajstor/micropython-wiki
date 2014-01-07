@@ -5,7 +5,7 @@ This wiki is to support development of the Micro Python core code and the variou
 The users guide on how to use Micro Python, and all user oriented library and module information, is on the [main micro python site](http://micropython.org/).
 
 ###What is Micro Python
-Micro Python is Python interpreter (with partial native code emission feature). It provides subset of Python 3.3 features, implemented for embedded processors and constrained systems. Micro Python also provides reference hardware board to run the interpreter.
+Micro Python is Python interpreter (with partial native code emission feature). It provides subset of Python 3.3 features, implemented for embedded processors and constrained systems.
 
 ### The Kickstarter board
 The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU, 1 Mbyte Flash, 168 MHz). Technical data on the chip can be found here: [STMicroelectronics website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
