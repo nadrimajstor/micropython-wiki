@@ -78,6 +78,32 @@ At that point, you will have a functioning micropython executable, which may be 
 
 ### ArchLinux
 
+The following packages will need to be installed before you can compile and run MicroPython:
+
+* gcc or gcc-multilib
+* readline
+* git
+
+To install these packages, use the following command:
+
+> pacman -S gcc-multilib readline git
+
+Then, clone the repository to your local machine:
+
+> git clone https://github.com/micropython/micropython.git
+
+Change directory to the Unix build directory:
+
+> cd micropython/unix
+
+And then make the executable
+
+> make
+
+At that point, you will have a functioning micropython executable, which may be launched with the command:
+
+> ./py
+
 ### Gentoo Linux
 
 ### Mac OSX
