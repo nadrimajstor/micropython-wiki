@@ -32,6 +32,9 @@ Modules which will (at the moment) **NOT** be covered in micropython are:
 * threading
 * multiprocessing
 
+### Development
+* [[Internals]] - some notes on VM/interpreter internals.
+
 ### I want to try using micropython now!
 
 If you have a machine that runs some flavor of Unix, see the [[Getting-Started]] instructions on how to obtain the binary to run micropython and start developing.
