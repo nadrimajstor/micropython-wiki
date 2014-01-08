@@ -28,7 +28,7 @@ The Kickstarter board
 * [[UDOO|Board-UDOO]]
 * [[OpenPilot Revolution|Board-OpenPilot-Revolution]]
 * [[Polyhelo|Board-Polyhelo]]
-* [[Sigalrm|Board-sigalrm]]
+* [[OpenMV|Board-OpenMV]]
 * [[Vortex86|Board-Vortex86]]
 
 
