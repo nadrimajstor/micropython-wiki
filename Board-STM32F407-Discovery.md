@@ -14,4 +14,5 @@ Cortex M4 STM32F407VG
 
 ###Status###
 * Initial support has been implemented, user switch and LEDs are supported.
+* Does not have separate directory - folded into initial stm port.
 * To build for STM32F407 Discovery compile with <code>make TARGET=STM32F4DISC</code>.
