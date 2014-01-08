@@ -7,8 +7,11 @@ Cortex M4 STM32F407VG
 * 1024KB flash ROM, 192KB RAM
 * 3axis accelerometer LIS302DL
 * mems microphopne MP45DT02, audio amp CS43L22
-* 8 LEDs
+* 4 user LEDs
+* 1 user switch
+* Reset switch
 * USB OTG
 
 ###Status###
-No work has yet been done on porting to this chip
+* Initial support has been implemented, user switch and LEDs are supported.
+* To build for STM32F407 Discovery compile with <code>make TARGET=STM32F4DISC</code>.
