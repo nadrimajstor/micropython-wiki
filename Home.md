@@ -14,7 +14,7 @@ The Kickstarter board
 
 A list of other boards and their ports is here: **[[Other Boards|Boards-Summary]]**
 
-###Porting
+###Porting to new hardware
 * [[How to port micro python to a new hardware target|porting]]
 * Implementation details:
     - [[i2c|i2c_info]]
