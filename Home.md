@@ -7,8 +7,28 @@ The users guide on how to use Micro Python, and all user oriented library and mo
 ###What is Micro Python
 Micro Python is Python interpreter (with partial native code emission feature). It provides subset of Python 3.3 features, implemented for embedded processors and constrained systems.
 
-### The Kickstarter board
-The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU, 1 Mbyte Flash, 168 MHz). Technical data on the chip can be found here: [STMicroelectronics website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
+### Boards###
+The Kickstarter board
+* The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU, 1 Mbyte Flash, 168 MHz).
+* Technical data on the chip can be found here: [STMicroelectronics website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet]
+* (http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
+
+**Others**
+* [[Netduino Plus 2|Board-NetduinoPlus2]]
+* [[FreeSOC|Board---FreeSOC]]
+* [[Arduino Due|Board-Arduino-Due]]
+* [[Teensy 3.1|Board-Teensy3.1]] - started
+* [[Digi-X|Board-Digi-X]]
+* [[Olimex STM32-H407|Board-Olimex-STM32-H407]]
+* [[Olimex STM32-405STK|Board-Olimex-STM32-405STK]]
+* [[Mikroe mini M4|Mikroe-mini-M4]]
+* [[UDOO|Board-UDOO]]
+* [[OpenPilot Revolution|Board-OpenPilot-Revolution]]
+* [[Polyhelo|Board-Polyhelo]]
+* [[Sigalrm|Board-sigalrm]]
+* [[Vortex86|Board-Vortex86]]
+
+
 
 ###The pyb module
 This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
