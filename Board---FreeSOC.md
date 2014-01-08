@@ -26,5 +26,5 @@ An ARM Cortex M3 CPU with a little 'FPGA' on-board.
   * RTC
   * 8 special I/O pins for high-current drive applications
 
-##Status##
+###Status###
 No work has yet been done on porting to this chip
