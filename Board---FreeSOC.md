@@ -1,7 +1,7 @@
 An ARM Cortex M3 CPU with a little 'FPGA' on-board.
 * http://freesoc.myshopify.com/products/freesoc-development-kit
 
-Features:
+###Features###
 * 32-bit Arm Cortex M3
 * 67MHz Operation, 256KB Flash Memory, and 64KB SRAM
   * A graphically configurable external memory interface allows you to expand the storage of your device with up to 1GB of external memory, directly mapped in the 4GB address space of the Cortex M3.
