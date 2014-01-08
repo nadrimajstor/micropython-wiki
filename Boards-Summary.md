@@ -1,6 +1,6 @@
 In addition to the pyboard the following have been identified as possibly suitable for ports.
 
-##Others##
+###Others###
 * [[Netduino Plus 2|Board-NetduinoPlus2]] - same chip as pyboard
 * [[STM Discovery STM32F429|Board-STM32F429]]
 * [[STM Discovery STM32F401|Board-STM32F401-Discovery]]
