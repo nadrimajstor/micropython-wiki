@@ -13,5 +13,6 @@ Cortex M4 TM4C123GH6PM (with FPU)
 * 2 buttons 1 RGB LED
 
 ###Status###
-No work has yet been done on porting to this chip
+No work has yet been done on porting to this chip.
+
 32KB SRAM may make it unsuitable
