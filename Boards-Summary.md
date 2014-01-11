@@ -15,6 +15,7 @@ In addition to the pyboard the following have been identified as possibly suitab
 * [[UDOO|Board-UDOO]] *(`$100 2013 USD)*
 * [[OpenPilot Revolution|Board-OpenPilot-Revolution]] *(`$130 2013 USD)*
 * [[Polyhelo|Board-Polyhelo]] *(`$130 2013 USD)* 
-* [[OpenMV|Board-OpenMV]] *(not available)*
 * [[Vortex86 ZERO|Board-Vortex86]] *(`$50 2013 USD)* 
-* [[Tiva TM4C123G Launchpad|Board-Tiva-TM4C123G-Launchpad]] *(`$13 2013 USD)* 
+* [[Tiva TM4C123G Launchpad|Board-Tiva-TM4C123G-Launchpad]] *(`$13 2013 USD)*
+* [[OpenMV|Board-OpenMV]] *(not yet available)*
+* [[PIXY CMUcam5|Board-Pixy]] *(`$74 2013 USD)* - not yet available
