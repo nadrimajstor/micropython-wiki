@@ -1,6 +1,13 @@
 Getting started with micropython development requires first building the appropriate binaries for your platform.
 
 ## UNIX
+* [DEB-based systems](https://github.com/micropython/micropython/wiki/Getting-Started#debian-ubuntu-mint-and-variants)
+* [FreeBSD-based systems](https://github.com/micropython/micropython/wiki/Getting-Started#freebsd)
+* [RPM-based systems](https://github.com/micropython/micropython/wiki/Getting-Started#fedora-centos-and-red-hat-enterprise-linux-and-variants)
+* [Pacman-based systems](https://github.com/micropython/micropython/wiki/Getting-Started#archlinux)
+* [Gentoo-based systems](https://github.com/micropython/micropython/wiki/Getting-Started#gentoo-linux)
+* [Mac systems](https://github.com/micropython/micropython/wiki/Getting-Started#mac-osx)
+
 
 ### Debian, Ubuntu, Mint, and variants
 
@@ -111,3 +118,6 @@ At that point, you will have a functioning micropython executable, which may be 
 OSX is only supported on the osx branch. First do :
 
 git checkout osx 
+
+## Microcontrollers (Bare-Metal, without an OS)
+### ARM-based microcontrollers
