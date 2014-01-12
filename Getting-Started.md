@@ -93,7 +93,7 @@ The following packages will need to be installed before you can compile and run 
 
 To install these packages, use the following command:
 
-> pacman -S gcc-multilib readline git
+> pacman -S gcc readline git
 
 Then, clone the repository to your local machine:
 
