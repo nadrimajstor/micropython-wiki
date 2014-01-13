@@ -23,7 +23,10 @@ A list of other boards and their ports is here: **[[Other Boards|Boards-Summary]
 If you have a machine that runs some flavor of Unix, see the [[Getting-Started]] instructions on how to obtain the binary to run micropython and start developing.
 
 ### Development
+* [[Tasks|Tasks]] - list of things developers need to do to get it done.
 * [[Internals]] - some notes on VM/interpreter internals.
+* [[Servos|Servos]] - how should we implement Servos
+* [[PWM and Timers| PWM-Timers]]
 
 ###The pyb module
 This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
