@@ -83,6 +83,7 @@ The pyboard has 23 pins that can output hardware PWM. It has 12x 16bit timers an
 
 The Teensy3.1 has 12 pins that can output PWM but (I think) only 3 Timers. So a software interrupt routine would be an excellent library for the Teensy. The Teensy 3.1 has PWM 12bit resolution. Some data here: https://www.pjrc.com/teensy/td_pulse.html
 
+####Straw man code
 So Servo setup might look like the following.
 ISR defined within - need to be weritten in c so as to use interrupts. Initially just software based.
 ```
