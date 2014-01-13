@@ -75,8 +75,7 @@ The top level python structure sets the servo instances up and adds them to a se
 
 **Using Software timer:**
 
-Only one is possible and so the maximum update frequency gets lower as the number of servos is added.
-The Servo pool class reports this. Otherwise its very similar to above.
+Need different interrupt routines for setting and resetting the pulses. No reason why it can't be as efficient as the hardware version.
 
 
 ####Hardware considerations:
