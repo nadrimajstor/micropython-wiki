@@ -66,9 +66,9 @@ Where S = number of servos and R = rate of update in Hz.
 
 2. Have a software interrupt routine per Timer which interrupts R times a second and:
   * steps to the next servo in the list of servos for that Timer
-  * calls the python class function to calculate the pulse width for that servo.
-  * sets the PWM freq to proper pulse width
-  * outputs the pulse on correct pin
+  * reads the pin and pulse_width required for that servo from the python class.
+  * sets the PWM freq to that pulse width
+  * outputs the pulse on correct pin using anoeyhr s/w interrupt or hardware timer.
   * sleeps
 
 The top level python structure sets the servo instances up and adds them to a servo pool. Which manages how many servos are in a Timer queue and setting up and activating the timer interrupt routines.
