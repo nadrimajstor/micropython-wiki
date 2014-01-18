@@ -15,7 +15,11 @@ Each servo is listed with its update rate (pulse cycle) and pulse width.
   * hold position better, 
   * have better torque, speed, and accuracy
   * and therefore also use more power.
+  * This higher rate is handled internally and so the digital servo keeps updating its position even when it receives external updates infrequently.
+  * but if signals are received at a higher rate the servo can update more responsively.
 * are more expensive.
+* some also have other communication options. E.g. serial ports.
+  * This Servo class is for traditional PWM control only and does not address these.
 
 ####PWM
 So we need a PWM signal to control them. This is not the 'normal' use of PWM where the position is set by duty cycle (perhaps by integrating voltage over time as used for dimming Leds). This method is based on individual pulse widths, not a chain of pulses. This method is used because a R/C vehicle may lose its signal from time to time and the servos must stay in position in the absence of any pulse train.
