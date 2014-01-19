@@ -19,3 +19,4 @@ In addition to the pyboard the following have been identified as possibly suitab
 * [[Tiva TM4C123G Launchpad|Board-Tiva-TM4C123G-Launchpad]] *(`$13 2013 USD)*
 * [[OpenMV|Board-OpenMV]] *(not yet available)*
 * [[PIXY CMUcam5|Board-Pixy]] *(`$74 2013 USD)* - not yet available
+* [[Apogee V1.0|http://wiki.paparazziuav.org/wiki/Apogee/v1.00]]
