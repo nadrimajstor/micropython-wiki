@@ -83,4 +83,4 @@ parsing element 2, address = 0x08020000, size = 136500
 done parsing DfuSe file
 ```
 
-You should now be able to fire up a terminal emulator (i.e. minicom) on ```/dev/ttyACM0``` and have a micropython prompt.
+Remove the BOOT0 jumper and press reset. You should now be able to fire up a terminal emulator (i.e. minicom) on ```/dev/ttyACM0``` and have a micropython prompt.
