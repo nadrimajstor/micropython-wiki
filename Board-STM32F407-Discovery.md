@@ -41,7 +41,7 @@ Tell udev to reload its rules:
 sudo udevadm control --reload-rules
 ```
 
-* Plug in the discovery board. To use DFU, you need to connect CN5 (the micro-USB connector on the bottom of the board) into your PC. Unfortunately, this connector doesn't power the board, so you'll probably want to also connect CN1 (mini-USB connector at the top of the board) in order to power the board. CN1 connects to the STM32F103 chip near the mini connector in order to support stlink. CN5 connects to the STM32F407 chip.
+* Plug in the discovery board. To use DFU, you need to connect CN5 (the micro-USB connector on the bottom of the board) into your PC. Unfortunately, the CN5 connector doesn't power the board, so you can either connect CN1 (mini-USB connector at the top of the board), or run a jumper wire from PA9 to 5V (PA9 connects to VBUS on CN5) in order to power the board. CN1 connects to the STM32F103 chip near the mini connector in order to support stlink. CN5 connects to the STM32F407 chip.
 
 * Put the board in DFU mode. To do this, you need to make BOOT0 high, and BOOT1 low, and reset the board. Since the onboard bootloader supports bootloading over UARTs, CAN bus, and USB, you need to make sure that UART1 (PA9/PA10) UART3 (PB10/11 and PC10/11) and CAN (PB5/13) are quiescent while bootloading.
 
