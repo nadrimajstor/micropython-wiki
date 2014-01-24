@@ -1,5 +1,5 @@
 Cortex M4 TM4C123GH6PM (with FPU)
-* home - http://www.ti.com/product/tm4c123gh6pm
+* home - http://www.ti.com/tool/ek-tm4c123gxl
 * datasheet - http://www.ti.com/product/tm4c123gh6pm
 * Related board TM4C129X (~200USD)  - http://www.ti.com/tool/dk-tm4c129x
 
