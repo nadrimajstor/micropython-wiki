@@ -22,6 +22,9 @@ A list of other boards and their ports is here: **[[Other Boards|Boards-Summary]
 ### I want to try using micropython now!
 If you have a machine that runs some flavor of Unix, see the [[Getting-Started]] instructions on how to obtain the binary to run micropython and start developing.
 
+### Performance
+Some [[numbers|Performance]] from a very simple benchmark
+
 ### Development
 * [[Internals]] - some notes on VM/interpreter internals.
 * [[Servos|Servos]] - how should we implement Servos
