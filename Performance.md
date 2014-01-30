@@ -14,7 +14,7 @@ Damien gave me a hint, and told me to put the performance test inside a function
 
 **Count:  1,098,681**
 
-On pyboard it's 1,731,338
+On pyboard it's 2,890,723
 
 ***
 
