@@ -1,17 +1,18 @@
 Here's a sample little tight counter loop, running for 10 seconds on 3 different setups:
 
 **MicroPython on Teensy 3.1: (96Mhz ARM)**
-Damien gave me a hint, and told me to put the performance test inside a function, rather than global. It almost doubles the execution speed, which used to run 396,505 times.
+Damien gave me a hint, and told me to put the performance test inside a function, rather than global. It almost doubles the execution speed, which used to run 396,505 times. With another hint, its up over a million now:
 
     def performanceTest():
-        endTime = pyb.millis() + 10000
+        millis = pyb.millis
+        endTime = millis() + 10000
         count = 0
-        while pyb.millis() < endTime:
+        while millis() < endTime:
             count += 1
         print("Count: ", count)
     performanceTest()
 
-**Count:  659,770**
+**Count:  1,098,681**
 
 ***
 
