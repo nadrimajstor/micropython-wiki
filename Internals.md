@@ -4,8 +4,10 @@ MicroPython uses [string interning](http://en.wikipedia.org/wiki/String_internin
 
 MicroPython uses [Open addressing](http://en.wikipedia.org/wiki/Open_addressing) with [Linear probing](http://en.wikipedia.org/wiki/Linear_probing) of step = 1 for implementation of dictionaries. Rehashing happens when last free slot is used (on reaching loadfactor = 1.0).
 
-# CPython internals
+## CPython internals
 
 (For reference and comparison.)
 
 * [The structure of .pyc files](http://nedbatchelder.com/blog/200804/the_structure_of_pyc_files.html)
+
+* [Python’s Innards: Interpreter Stacks](http://tech.blog.aknin.name/2010/07/22/pythons-innards-interpreter-stacks/)
