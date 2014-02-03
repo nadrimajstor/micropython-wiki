@@ -1,5 +1,4 @@
-
-    **Pin 	Skin	Timer		Alt Timer	Alt Timer**
+    Pin 	Skin	Timer		Alt Timer	Alt Timer
 
     PB14	Y15		TIM12_CH1
     PB15	Y16		TIM12_CH2
