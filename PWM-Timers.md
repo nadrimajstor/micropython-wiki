@@ -1,4 +1,3 @@
-**PWM Pins and Timers**
 
     **Pin 	Skin	Timer		Alt Timer	Alt Timer**
 
