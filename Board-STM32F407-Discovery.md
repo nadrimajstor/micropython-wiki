@@ -84,3 +84,18 @@ done parsing DfuSe file
 ```
 
 Remove the BOOT0 jumper and press reset. You should now be able to fire up a terminal emulator (i.e. minicom) on ```/dev/ttyACM0``` and have a micropython prompt.
+
+###Dealing with multiple DFU devices###
+When DFU looks for devices, if it only sees one device, then it will pick that device. It's been reported that sometimes other devices may show up, for example on one machine the error:
+```
+More than one DFU capable USB device found, you might try `--list' and then disconnect all but one device
+```
+was reported and ```dfu-util --list``` reported:
+```
+ound DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=0, name="UNDEFINED"
+Found DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=1, name="UNDEFINED"
+Found DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=2, name="UNDEFINED"
+Found DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=3, name="UNDEFINED"
+Found Runtime: [0a5c:21e6] devnum=0, cfg=1, intf=3, alt=0, name="UNDEFINED"
+```
+In this case, the device with the ID ```0a5c:21e6``` was some type of Broadcom device. In this case you can add ```--device 0483:df11``` to the dfu-util command line to tell it which device to use.
