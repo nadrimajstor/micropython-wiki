@@ -1,7 +1,7 @@
 In addition to the pyboard the following have been identified as possibly suitable for ports.
 
 ###Others###
-* [[Netduino Plus 2|Board-NetduinoPlus2]] *(`$60 2013 USD)* - same chip as pyboard
+* [[Netduino Plus 2|Board-NetduinoPlus2]] *(`$60 2013 USD)* - same chip as pyboard - **started**
 * [[STM Discovery STM32F429|Board-STM32F429]] *(`$24 2013 USD)* 
 * [[STM Discovery STM32F401|Board-STM32F401-Discovery]] *(`$15 2013 USD)* 
 * [[STM Discovery STM32F407|Board-STM32F407-Discovery]] *(`$15 2013 USD)* - **started**
