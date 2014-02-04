@@ -18,4 +18,4 @@ Initial port completed.
 ###Programming from Linux (via DFU)###
 This is the same as is done for the [[STM Discovery STM32F407|Board-STM32F407-Discovery]]
 
-The push button on the board is connected to BOOT1. You'll need to wire up an external pushbutton to control the RESET line.
+The push button on the board is connected to BOOT0. You'll need to wire up an external pushbutton to control the RESET line.
