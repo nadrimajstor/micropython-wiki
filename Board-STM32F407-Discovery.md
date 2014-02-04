@@ -85,6 +85,12 @@ done parsing DfuSe file
 
 Remove the BOOT0 jumper and press reset. You should now be able to fire up a terminal emulator (i.e. minicom) on ```/dev/ttyACM0``` and have a micropython prompt.
 
+###Programming from Mac OS X (via DFU)###
+
+If you are building on Mac OS X, you could programming like from Linux except install dfu-utils throught [homebrew](http://brew.sh/):
+
+    brew install dfu-util
+
 ###Dealing with multiple DFU devices###
 When DFU looks for devices, if it only sees one device, then it will pick that device. It's been reported that sometimes other devices may show up, for example on one machine the error:
 ```
