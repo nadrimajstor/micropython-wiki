@@ -13,3 +13,5 @@ Proposal:
 2. Expose a useful basic interface subset in C and expose as Python class.
 
 Its possible we want to add safety into 1 so that (say) changing a timing mode bit deactivates the clock and bricks the device - is made more difficult.
+
+##Plan:
