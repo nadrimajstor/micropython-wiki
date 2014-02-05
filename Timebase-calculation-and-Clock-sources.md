@@ -34,7 +34,7 @@ Uses TRGI to map. Counter mode is set using the TIMx_CR1 reg and CMS bits as ind
 A Timer can be used as a Time base generator. A 16bit timer can generate update_events from nanoseconds up to a few minutes.
 
 The calculation is:
-* update_event = TIM_CLK / (( PSC + 1) * (APR + 1) * (RCR + 1))
+* ```update_event = TIM_CLK / (( PSC + 1) * (APR + 1) * (RCR + 1))```
 
 where:
 * TIM_CLK is the timer clock input
@@ -54,7 +54,7 @@ TIM_CLK is replaced by T1x_CLK - an ext freq applied to pins TI1 or 2
 
 ####External clock mode 2
 TIM_CLK is replaced by ETR_CLK. ETR_PSC is also factored in as follows:
-* update_event = ETR_CLK / ((ETR_PSC + 1) * ( PSC + 1) * (APR + 1) * (RCR + 1))
+* ```update_event = ETR_CLK / ((ETR_PSC + 1) * ( PSC + 1) * (APR + 1) * (RCR + 1))```
 * where ETR_CLK =100kHz, Prescaler=1, ETR_PSC=2, Autoreload=255, and Repetition=2
 * update_event = 100 * 10e3 / ((2+1) (1+1) (255+1) (2+1)) = 21.7 Hz
 
