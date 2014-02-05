@@ -16,9 +16,9 @@ These Timers can be used to correctly determine speed and direction from externa
 * [[STM32F405 pinouts]]
 * [[STM32F405 Timer Triggering]]
 * [[clock source and Timebase calculations| Timebase-calculation-and-Clock-sources]]
-* [[Single shot timer setup|Timer_one_shot]]
-* [[Capture mode|Timer_capture_mode]]
-* [[Implementation|Timer_Implementation]]
+* [[Single shot timer setup|Timer-one-shot]]
+* [[Capture mode|Timer-capture-mode]]
+* [[Implementation|Timer-Implementation]]
 
 ### Timer Summary:
 Advanced - TIM1,8
