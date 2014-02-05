@@ -1,3 +1,14 @@
+Timer pin out diagrams
+
+![TIM1 on STM32F405](http://i58.tinypic.com/2wch6yr.jpg)
+![TIM2 on STM32F405](http://i59.tinypic.com/28s7cpy.jpg)
+![TIM3 on STM32F405](http://i59.tinypic.com/11rahvn.jpg)
+![TIM4 on STM32F405](http://i58.tinypic.com/2004u39.jpg)
+![TIM5 on STM32F405](http://i62.tinypic.com/11lu8p1.jpg)
+![TIM8 on STM32F405](http://i62.tinypic.com/o91yxi.jpg)
+![TIM9 on STM32F405](http://i61.tinypic.com/qq2zhk.jpg)
+![TIM10 TIM11 on STM32F405](http://i59.tinypic.com/5dqjvo.jpg)
+
 ```
     Pin 	Skin	Timer		Alt Timer	Alt Timer
 
