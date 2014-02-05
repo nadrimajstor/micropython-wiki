@@ -15,9 +15,9 @@ The following timers can sample an input signal and determine its period.
 These Timers can be used to correctly determine speed and direction from externally supplied quadrature signals.
 * 1,2,3,4,5,8,9
 
-[[STM32F405 pinouts]]
-[[STM32F405 Timer Triggering]]
-[[Implementation]]
+*[[STM32F405 pinouts]]
+*[[STM32F405 Timer Triggering]]
+*[[Implementation]]
 
 ### Timer Summary:
 Advanced - TIM1,8
