@@ -9,9 +9,9 @@ Timers in this chipset come with various capabilities:
 * The remaining Timers 6,7,13,14 do not have any pin connections on the 64 pin package.
 All timers can be used to generate timebases. Most can do PWM generation. A digram below shows how timers can be cascaded to make longer or triggered timings. Most triggers can also generate Interrupts.
 
-The following timers can sample an input signal and determine its period. `1,2,3,4,5,8,9,10,11
+The following timers can sample an input signal and determine its period. `1,2,3,4,5,8,9,10,11`
 
-These Timers can be used to correctly determine speed and direction from externally supplied quadrature signals. `1,2,3,4,5,8,9
+These Timers can be used to correctly determine speed and direction from externally supplied quadrature signals. `1,2,3,4,5,8,9`
 
 * [[STM32F405 pinouts]]
 * [[STM32F405 Timer Triggering]]
