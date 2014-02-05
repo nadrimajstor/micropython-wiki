@@ -35,7 +35,7 @@ And then make the executable
 
 At that point, you will have a functioning micropython executable, which may be launched with the command:
 
-> ./py
+> ./micropython
 
 ### FreeBSD
  
@@ -59,7 +59,7 @@ Edit main.c, replacing "malloc.h" with "stdlib.h", then:
 
 This will generate the 'py' executable, which may be executed by:
 
-> ./py
+> ./micropython
 
 ### Fedora, CentOS, and Red Hat Enterprise Linux and variants
 
@@ -81,7 +81,7 @@ And then make the executable
 
 At that point, you will have a functioning micropython executable, which may be launched with the command:
 
-> ./py
+> ./micropython
 
 ### ArchLinux
 
@@ -109,15 +109,31 @@ And then make the executable
 
 At that point, you will have a functioning micropython executable, which may be launched with the command:
 
-> ./py
+> ./micropython
 
 ### Gentoo Linux
 
 ### Mac OSX
 
-OSX is only supported on the osx branch. First do :
+The XCode and Command Line Developer Tools package will need to be installed before you can compile and run MicroPython:
 
-git checkout osx 
+> xcode-select --install
+
+Then, clone the repository to your local machine:
+
+> git clone https://github.com/micropython/micropython.git
+
+Change directory to the Unix build directory:
+
+> cd micropython/unix
+
+And then make the executable
+
+> make
+
+At that point, you will have a functioning micropython executable, which may be launched with the command:
+
+> ./micropython
 
 ## Microcontrollers (Bare-Metal, without an OS)
 ### ARM-based microcontrollers
