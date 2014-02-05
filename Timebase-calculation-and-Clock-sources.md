@@ -1,6 +1,7 @@
 ###Clock sources
 Timers get their clock source from External pins or Internal timer sources.
 
+####External
 External = pins: TI1 or TI2 or ETR
 
 1. set pin to be used:
@@ -29,7 +30,7 @@ One Timer can be used as the prescaler for another.
 The first timer update_event, or output_compare signal is used as clock for the second.
 Uses TRGI to map. Counter mode is set using the TIMx_CR1 reg and CMS bits as indicated in the example below. The counter mode sets whether the update_event occurs on overflow and/or underflow of the Timer.
 
-####Time Base generation
+##Time Base generation
 A Timer can be used as a Time base generator. A 16bit timer can generate update_events from nanoseconds up to a few minutes.
 
 The calculation is:
