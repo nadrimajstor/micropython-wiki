@@ -15,7 +15,8 @@ These Timers can be used to correctly determine speed and direction from externa
 
 * [[STM32F405 pinouts]]
 * [[STM32F405 Timer Triggering]]
-* [[Implementation]]
+* [[clock source and Timebase calculations| Timers_timebase]]
+* [[Implementation|Timer_Implementation]]
 
 ### Timer Summary:
 Advanced - TIM1,8
