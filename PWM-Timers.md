@@ -15,7 +15,7 @@ These Timers can be used to correctly determine speed and direction from externa
 
 * [[STM32F405 pinouts]]
 * [[STM32F405 Timer Triggering]]
-* [[clock source and Timebase calculations| Timers_timebase]]
+* [[clock source and Timebase calculations| Timebase-calculation-and-Clock-sources]]
 * [[Implementation|Timer_Implementation]]
 
 ### Timer Summary:
