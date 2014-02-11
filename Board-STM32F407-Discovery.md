@@ -85,6 +85,40 @@ done parsing DfuSe file
 
 Remove the BOOT0 jumper and press reset. You should now be able to fire up a terminal emulator (i.e. minicom) on ```/dev/ttyACM0``` and have a micropython prompt.
 
+```
+minicom -D /dev/ttyACM0
+```
+where you should see something like this:
+
+```
+Welcome to minicom 2.7
+
+OPTIONS: I18n 
+Compiled on Jan 11 2014, 10:01:22.
+Port /dev/ttyACM0, 23:34:32
+
+Press CTRL-A Z for help on special keys
+
+>>>
+```
+
+If you hit Ctl+D the MCU will do a soft reboot and it will run whatever code is in /src/main.py and the following will be written to the console:
+
+```
+PYB: sync filesystems
+PYB: soft reboot
+```
+
+If you hit Ctl+C the running of /src/main.py is interrupted and you will be returned to the python prompt. The following is printed to the console:
+
+```
+Traceback (most recent call last):
+  File "0://src/main.py", in <module>
+VCPInterrupt()
+Micro Python build <git hash> on 25/1/2014; F4DISC with STM32F405RG
+Type "help()" for more information.
+>>>
+```
 ###Programming from Mac OS X (via DFU)###
 
 If you are building on Mac OS X, you could programming like from Linux except install dfu-utils throught [homebrew](http://brew.sh/):
