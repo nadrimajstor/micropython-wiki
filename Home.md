@@ -35,6 +35,8 @@ Some [[numbers|Performance]] from a very simple benchmark
 This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
 Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
 
+### Tips and Tricks / Howtos
+
 ### Current Limitations
 The entire set of standard python libraries is **not** supported. If a module is missing it will be due to the inapplicability of that module for use in an embedded controller. High memory consumption (e.g. sqlite3) or a lack of a certain required hardware feature (e.g. multiprocessing) are reasons that some modules can not be implemented for some microcontrollers. 
 The full list list of standard python libraries can be found here: [Python 3.3 standard lib](http://docs.python.org/3/library/) 
