@@ -36,6 +36,7 @@ This module allows access to the internal peripherals of the microcontroller chi
 Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
 
 ### Tips and Tricks / Howtos
+[How to perform a soft reset](https://github.com/micropython/micropython/wiki/Soft-reset)
 
 ### Current Limitations
 The entire set of standard python libraries is **not** supported. If a module is missing it will be due to the inapplicability of that module for use in an embedded controller. High memory consumption (e.g. sqlite3) or a lack of a certain required hardware feature (e.g. multiprocessing) are reasons that some modules can not be implemented for some microcontrollers. 
