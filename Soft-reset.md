@@ -18,8 +18,20 @@ Pressing `Ctrl-C` will terminate the interactive shell and soft reset the contro
 
 ### Further improvements
 One can echo those commands into the serial connection of the board to achieve the same goal (make sure you have write permissions).
-`echo "\x04\x05" > /dev/ttyASM0`
+`echo "\x03\x04" > /dev/ttyACM0`
 
 ### Integrate into IDE/Editor
 Several IDEs and Editors allow to customize shortkeys to execute arbitrary code.
+
+#### Emacs
+Add this somewhere in your emacs init (e.g. ~/.emacs.d/init.el). Adapt the serial device name if necessary. Now press `Ctrl-F5` within Emacs whenever you wish to soft-reset the controller.
  
+
+(defun restart_micropython ()
+" Restart Micropython-Board"
+(interactive)
+(save-buffer) ;; make sure to write changes to disk
+(shell-command "echo \"\\x03\\x04\" > /dev/ttyACM0")
+)
+;; Set a global key to initiate soft reset (customize as desired)
+(global-set-key (kbd "C-<f5>") 'restart_micropython)
