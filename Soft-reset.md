@@ -27,6 +27,7 @@ Several IDEs and Editors allow to customize shortkeys to execute arbitrary code.
 Add this somewhere in your emacs init (e.g. ~/.emacs.d/init.el). Adapt the serial device name if necessary. Now press `Ctrl-F5` within Emacs whenever you wish to soft-reset the controller.
  
 
+```
 (defun restart_micropython ()
 " Restart Micropython-Board"
 (interactive)
@@ -35,3 +36,4 @@ Add this somewhere in your emacs init (e.g. ~/.emacs.d/init.el). Adapt the seria
 )
 ;; Set a global key to initiate soft reset (customize as desired)
 (global-set-key (kbd "C-<f5>") 'restart_micropython)
+```
