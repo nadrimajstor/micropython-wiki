@@ -13,3 +13,5 @@ Cortex M4 STM32F429ZI
 
 ###Status###
 No work has yet been done on porting to this chip
+
+Unlike the STM32F4 Discovery board, this board is not recognized under Linux via the microUSB port. To power the board one has to use the miniUSB connector in addition or bridge 5V with PB13.
