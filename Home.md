@@ -28,7 +28,8 @@ Some [[numbers|Performance]] from a very simple benchmark
 ### Development
 * [[Internals]] - some notes on VM/interpreter internals.
 * [[Servos|Servos]] - how should we implement Servos
-* [[PWM and Timers| PWM-Timers]]
+* [[PWM and Timers|PWM-Timers]]
+* [[Watchdogs|Watchdogs,-Crash-prevention,-Crash-recovery]]
 
 ###The pyb module
 This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
