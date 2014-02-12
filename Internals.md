@@ -1,4 +1,4 @@
-Note: MicroPython is work in progress and information here represents state of affairs at the beginning of 2014-01. As core functionality matures, it is expected that improvements and optimizations will follow. This page is in particular intended to identify areas to optimize.
+Note: MicroPython is work in progress and information here represents state of affairs at the beginning of 2014-02. As core functionality matures, it is expected that improvements and optimizations will follow. This page is in particular intended to identify areas to optimize.
 
 MicroPython uses [string interning](http://en.wikipedia.org/wiki/String_interning). Both interned and non-interned strings are supported. File: qstr.c
 
