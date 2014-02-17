@@ -15,8 +15,8 @@ Cortex M4 STM32F407VG
 ###Status###
 * Initial support has been implemented, user switch and LEDs are supported.
 * Does not have separate directory - folded into initial stm port.
+* Uncomment `#define STM32F4DISC` in mpconfigport.h and comment out the other board types (e.g. `//#define PYBOARD4`).
 * To build for STM32F407 Discovery compile with `make TARGET=STM32F4DISC`.
-* Also set `#define STM32F4DISC` in mpconfigport.h
 
 ###Programming from Linux (via DFU)###
 This section covers how to flash the STM32F4DISCOVERY from linux (I was using Linux Mint 14, which is derived from ubuntu 12.10).
