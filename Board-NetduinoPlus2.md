@@ -15,6 +15,8 @@ Initial port completed.
 * pyb.switch() returns True if the pushbutton is pushed
 * 5V and 3.3v is enabled on the expansion header
 
+To build, follow the directions for the [[STM Discovery STM32F407|Board-STM32F407-Discovery]], but use a ```BOARD``` of ```NETDUINO_PLUS_2```.
+
 ###Programming from Linux (via DFU)###
 This is the same as is done for the [[STM Discovery STM32F407|Board-STM32F407-Discovery]]
 
