@@ -9,7 +9,7 @@ Micro Python is Python interpreter (with partial native code emission feature). 
 
 ###Boards
 The Kickstarter board
-* The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU, 1 Mbyte Flash, 168 MHz).
+* The board relies on a 32 bit ARM Cortex M4 CPU (STM32F405RG, DSP with FPU, 1Mbyte Flash, 128+64 Kbyte RAM, 168 MHz).
 * Technical data on the chip can be found here: [STMicroelectronics website](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144) and the datasheet can be found here: [datasheet](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf)
 
 A list of other boards and their ports is here: **[[Other Boards|Boards-Summary]]**
