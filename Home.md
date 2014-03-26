@@ -2,7 +2,7 @@ Welcome to the micropython dev wiki!
 This is the [Micro Python](http://micropython.org/) project, which puts an implementation of Python 3.x on a microcontroller. The project also includes a small microcontroller board based around the STM32F405RG.
 
 This wiki is to support development of the Micro Python core code and the various ports to new hardware.
-The users guide on how to use Micro Python, and all user oriented library and module information, is on the [main micro python site](http://micropython.org/).
+The users guide on how to use Micro Python, and all user oriented library and module information, is on the [main Micro Python site](http://micropython.org/).
 
 ###What is Micro Python
 Micro Python is Python interpreter (with partial native code emission feature). It provides subset of Python 3.3 features, implemented for embedded processors and constrained systems.
