@@ -14,11 +14,6 @@ The Kickstarter board
 
 A list of other boards and their ports is here: **[[Other Boards|Boards-Summary]]**
 
-###Porting to new hardware
-* [[How to port micro python to a new hardware target|porting]]
-* Implementation details:
-    - [[i2c|i2c_info]]
-
 ### I want to try using micropython now!
 If you have a machine that runs some flavor of Unix, see the [[Getting-Started]] instructions on how to obtain the binary to run micropython and start developing.
 
@@ -30,6 +25,7 @@ Some [[numbers|Performance]] from a very simple benchmark
 * [[Servos|Servos]] - how should we implement Servos
 * [[PWM and Timers|PWM-Timers]]
 * [[Watchdogs|Watchdogs,-Crash-prevention,-Crash-recovery]]
+* [[How to port micro python to a new hardware target|porting]]
 
 ###The pyb module
 This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
