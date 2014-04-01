@@ -127,6 +127,14 @@ If you are building on Mac OS X, you could programming like from Linux except in
 
     brew install dfu-util
 
+You could be able to launch a terminal emulator using ```screen``` on ```/dev/tty.usbmodem411``` (```ls /dev/tty.usbmodem*``` confirm the device name) and got a micropython prompt:
+
+```
+screen /dev/tty.usbmodem411
+```
+
+Press ```Ctrl-a``` and ```Ctrl-\``` to quit the emulator, else the usbmodem device will be busy and refusing to connect again until you disconnect and plug in usb cable.
+
 ###Dealing with multiple DFU devices###
 When DFU looks for devices, if it only sees one device, then it will pick that device. It's been reported that sometimes other devices may show up, for example on one machine the error:
 ```
