@@ -20,16 +20,22 @@ If you have a machine that runs some flavor of Unix, see the [[Getting-Started]]
 ### Performance
 Some [[numbers|Performance]] from a very simple benchmark
 
+### Documentation
+
+* For introduction and tutorials on using MicroPython on Pyboard follow links on http://micropython.org/
+* MicroPython is an implementation of (subset of) Python language, so "Tutorial" and "Language Reference" sections of https://docs.python.org/3.3/ apply. (Note: only few, core library modules are provided with MicroPython, few more may be available as user-installable modules, so "Library Reference" applies only partially).
+* Ongoing effort to document [[Differences]] between CPython and MicroPython.
+
+#### The pyb module
+This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for more microcontrollers may be added in future releases.
+Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
+
 ### Development
 * [[Internals]] - some notes on VM/interpreter internals.
 * [[Servos|Servos]] - how should we implement Servos
 * [[PWM and Timers|PWM-Timers]]
 * [[Watchdogs|Watchdogs,-Crash-prevention,-Crash-recovery]]
 * [[How to port micro python to a new hardware target|porting]]
-
-###The pyb module
-This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for different microcontrollers are will be added in future releases.
-Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
 
 ### Tips and Tricks / Howtos
 [How to perform a soft reset](https://github.com/micropython/micropython/wiki/Soft-reset)
