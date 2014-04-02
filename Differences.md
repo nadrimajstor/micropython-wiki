@@ -12,7 +12,7 @@ Some features don't cater for constrained systems, and at the same time not easy
 
 1. No unicode support is actually implemented. Python3 calls for strict difference between ``str`` and ``bytes`` data types (unlike Python2, which has neutral unified data type for strings and binary data, and separates out unicode data type). MicroPython faithfully implements ``str``/``bytes`` separation, but currently, underlying ``str`` implementation is the same as ``bytes`` - meaning, strings in MicroPython are not unicode, but 8-bit characters (fully binary-clean).
 1. Object finalization (``__del__()`` method) is not currently implemented. This is tracked by [#245](//github.com/micropython/micropython/issues/245).
-1. It's not possible to subclass builtin types. [#317](//github.com/micropython/micropython/issues/317)
+1. It's not possible to subclass builtin types. [#401](//github.com/micropython/micropython/issues/401)
 
 ## Known Issues
 Known issues are essentially bugs, misfeaturures, and omissions considered such, and scheduled to be fixes. So, ideally any entry here should be accompanied by bug ticket reference. But note that known issues may have different priorities, especially within wider development process, so if you are actually affected by some issue, please add details of your case to the ticket (or open it if does not yet exist) to help planning (submitting patches is even more productive). (Please note that among not implemented modules/classes are listed only those which are considered very important to implement; per the above, MicroPython does not provide full standard library in general.)
@@ -28,5 +28,5 @@ Known issues are essentially bugs, misfeaturures, and omissions considered such,
 1. Only the very basic implementation of % string formatting operator is available (%s and %r formatting codes). [#403](//github.com/micropython/micropython/issues/403).
 1. ``struct`` module not implemented.
 1. ``re`` module not implemented. [#13](//github.com/micropython/micropython/issues/13)
-1. Only beginning of ``io`` module and class hierarchy exists so far. In particular, io.StringIO is not implemented.
+1. Only beginning of ``io`` module and class hierarchy exists so far. In particular, ``io.StringIO`` is not implemented.
 1. ``collecions.deque`` class is not implemented.
