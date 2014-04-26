@@ -11,7 +11,7 @@ MicroPython is intended for constrained environments, in particular, microcontro
 Some features don't cater for constrained systems, and at the same time not easy to implement - efficiently or at all. Such features are known as "implementation differences" and some of them are potentially subject for future development after corresponding discussion and consideration. Note that many of them would affect size and performance of MicroPython implementation, so sometime not implementing some feature (or it part) is called by MicroPython's target usage.
 
 1. No unicode support is actually implemented. Python3 calls for strict difference between ``str`` and ``bytes`` data types (unlike Python2, which has neutral unified data type for strings and binary data, and separates out unicode data type). MicroPython faithfully implements ``str``/``bytes`` separation, but currently, underlying ``str`` implementation is the same as ``bytes`` - meaning, strings in MicroPython are not unicode, but 8-bit characters (fully binary-clean).
-1. Object finalization (``__del__()`` method) is not currently implemented. This is tracked by [#245](//github.com/micropython/micropython/issues/245).
+1. Object finalization (``__del__()`` method) is supported for builtin types, but not yet user classes. This is tracked by [#245](//github.com/micropython/micropython/issues/245).
 1. It's not possible to subclass builtin types. [#401](//github.com/micropython/micropython/issues/401)
 
 ## Known Issues
