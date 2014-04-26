@@ -30,3 +30,6 @@ Known issues are essentially bugs, misfeaturures, and omissions considered such,
 1. No builtin``re`` module implementation. micropython-lib offers initial PCRE FFI module for "unix" port [#13](//github.com/micropython/micropython/issues/13)
 1. Only beginning of ``io`` module and class hierarchy exists so far.
 1. ``collecions.deque`` class is not implemented.
+1. ``memoryview`` object not implemented.
+1. Container slice assignment/deletion not implemented. [#509](https://github.com/micropython/micropython/issues/509)
+1. Keyword and keyword-only arguments need more work #466, #524.
