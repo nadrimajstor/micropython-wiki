@@ -27,6 +27,6 @@ Known issues are essentially bugs, misfeaturures, and omissions considered such,
 1. str.format() may miss few advanced/obscure features (but otherwise almost completely implemented). [#407](//github.com/micropython/micropython/issues/407)
 1. <strike>Only the very basic implementation of % string formatting operator is available (%s and %r formatting codes).</strike> [#403](//github.com/micropython/micropython/issues/403).
 1. ``struct`` module should have all functionality, but misses some syntactic sugar (like repetition specifiers in type strings).
-1. ``re`` module not implemented. [#13](//github.com/micropython/micropython/issues/13)
+1. No builtin``re`` module implementation. micropython-lib offers initial PCRE FFI module for "unix" port [#13](//github.com/micropython/micropython/issues/13)
 1. Only beginning of ``io`` module and class hierarchy exists so far.
 1. ``collecions.deque`` class is not implemented.
