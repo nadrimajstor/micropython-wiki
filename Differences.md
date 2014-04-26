@@ -26,7 +26,7 @@ Known issues are essentially bugs, misfeaturures, and omissions considered such,
 1. <strike>Exception handling with generators is not fully implemented.</strike> (Some small details may need to be done yet.) [#243](//github.com/micropython/micropython/issues/243)
 1. str.format() may miss few advanced/obscure features (but otherwise almost completely implemented). [#407](//github.com/micropython/micropython/issues/407)
 1. <strike>Only the very basic implementation of % string formatting operator is available (%s and %r formatting codes).</strike> [#403](//github.com/micropython/micropython/issues/403).
-1. ``struct`` module not implemented.
+1. ``struct`` module should have all functionality, but misses some syntactic sugar (like repetition specifiers in type strings).
 1. ``re`` module not implemented. [#13](//github.com/micropython/micropython/issues/13)
 1. Only beginning of ``io`` module and class hierarchy exists so far. In particular, ``io.StringIO`` is not implemented.
 1. ``collecions.deque`` class is not implemented.
