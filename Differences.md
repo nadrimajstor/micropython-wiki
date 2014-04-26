@@ -22,7 +22,7 @@ Known issues are essentially bugs, misfeaturures, and omissions considered such,
 1. It's not possible to override builtin functions in general way so far - no "builtins" module is implemented, so any overrides work within current module only.
 1. There's no support for persistent bytecode, and running bytecode (vs running Python source). [#222](//github.com/micropython/micropython/issues/222)
 1. print() function doesn't use Python stream infrastructure, but underlying C printf() function directly. This means if you override sys.stdout, print() won't be affected. [#209](//github.com/micropython/micropython/issues/209)
-1. Some more advanced usages of package/module importing not fully implemented (e.g. relative imports). [#298](//github.com/micropython/micropython/issues/298)
+1. Some more advanced usages of package/module importing not fully implemented. [#298](//github.com/micropython/micropython/issues/298)
 1. <strike>Exception handling with generators is not fully implemented.</strike> (Some small details may need to be done yet.) [#243](//github.com/micropython/micropython/issues/243)
 1. str.format() may miss few advanced/obscure features (but otherwise almost completely implemented). [#407](//github.com/micropython/micropython/issues/407)
 1. <strike>Only the very basic implementation of % string formatting operator is available (%s and %r formatting codes).</strike> [#403](//github.com/micropython/micropython/issues/403).
