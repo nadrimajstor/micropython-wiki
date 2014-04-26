@@ -19,7 +19,7 @@ Known issues are essentially bugs, misfeaturures, and omissions considered such,
 
 1. Some functions don't perform well enough argument checking, which potentially may lead to crash if wrong argument types are passed.
 1. Some functions use ``assert()`` for argument checking, which will lead to crash if wrong argument types are passed/errornous conditions are faced. This should be replaced with Python exception raising.
-1. It's not possible to stably override builtin functions so far - not "builtins" module is implemented, so any overrides work only within current module only.
+1. It's not possible to override builtin functions in general way so far - no "builtins" module is implemented, so any overrides work within current module only.
 1. There's no support for persistent bytecode, and running bytecode (vs running Python source). [#222](//github.com/micropython/micropython/issues/222)
 1. print() function doesn't use Python stream infrastructure, but underlying C printf() function directly. This means if you override sys.stdout, print() won't be affected. [#209](//github.com/micropython/micropython/issues/209)
 1. Some more advanced usages of package/module importing not fully implemented (e.g. relative imports). [#298](//github.com/micropython/micropython/issues/298)
