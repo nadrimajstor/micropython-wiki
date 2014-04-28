@@ -1,5 +1,5 @@
 Welcome to the micropython dev wiki!
-This is the [Micro Python](http://micropython.org/) project, which puts an implementation of Python 3.x on a microcontroller. The project also includes a small microcontroller board based around the STM32F405RG.
+This is the [Micro Python](http://micropython.org/) project, which puts an implementation of Python 3.x on a microcontroller. The project also includes a small [microcontroller board](https://github.com/micropython/pyboard) based around the STM32F405RG.
 
 This wiki is to support development of the Micro Python core code and the various ports to new hardware.
 The users guide on how to use Micro Python, and all user oriented library and module information, is on the [main Micro Python site](http://micropython.org/).
