@@ -53,3 +53,7 @@ On pyboard it's 2,890,723
     }  
 
 **Count: 4,970,227**
+
+***
+
+Some more looping examples and numbers: https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers/posts/664832
