@@ -1,6 +1,8 @@
+# Examples
+
 This page provides some examples to get you started on using micropython and the pyboard.
 
-# SDdatalogger
+## SDdatalogger
 
 [SDdatalogger in the repository](https://github.com/micropython/micropython/tree/master/examples/SDdatalogger)
 
