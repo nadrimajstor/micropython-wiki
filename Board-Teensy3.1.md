@@ -10,4 +10,6 @@ Cortex M4 based MK20DX256VLH7
 * SPI, i2c, CANbus
 
 ###Status###
-Work has started on porting to this chip. See [repo](https://github.com/micropython/micropython/tree/master/teensy)
+1. Work has started on porting to this chip. See [repo](https://github.com/micropython/micropython/tree/master/teensy) (2014-05-09: does not compile).
+
+2. The working Micro Python code can be found in a fork https://github.com/dhylands/micropython/tree/fix-2014-01-14.
