@@ -7,17 +7,17 @@ Each servo is listed with its update rate (pulse cycle) and pulse width.
 * Cheap.
 * Generally have +/-90 degree rotations about a centered rest position
   * but can also be continuous rotation or other ranges (e.g. +/- 180 degree).
-* Use a PWM mechanism to control their desired position with a central frequency approximately 1500 usecs (666 Hz).
+* Use a PWM mechanism (but not standard PWM) to control their desired position with a central frequency approximately 1500 usecs (666 Hz).
 * Need to get updates at from 20-65 times per second (Hz).
 
 ####Digital servos:
 * have a higher refresh frequency - upto 400Hz and therefore:
   * hold position better, 
   * have better torque, speed, and accuracy
-  * and therefore also use more power.
+  * therefore use more power.
   * This higher rate is handled internally and so the digital servo keeps updating its position even when it receives external updates infrequently.
   * but if signals are received at a higher rate the servo can update more responsively.
-* are more expensive.
+* more expensive than analog.
 * some also have other communication options. E.g. serial ports.
   * This Servo class is for traditional PWM control only and does not address these.
 
@@ -87,153 +87,8 @@ The pyboard has 23 pins that can output hardware PWM. It has 12x 16bit timers an
 
 The Teensy3.1 has 12 pins that can output PWM but (I think) only 3 Timers. So a software interrupt routine would be an excellent library for the Teensy. The Teensy 3.1 has PWM 12bit resolution. Some data here: https://www.pjrc.com/teensy/td_pulse.html
 
-####Straw man code
-So Servo setup might look like the following.
-ISR defined within - need to be weritten in c so as to use interrupts. Initially just software based.
-```
-#!/usr/bin/python
+####Implementation
+The actual implementation on the pyboard is set to only adjust the 4 lines dedicated to Servo control.
+The code wouuld need to be updated or replaced to drive more pins as servos.
+The Servo is driven by hardware using TIM5 which neatly is designed to control exactly the four pins allocated to Servos on the Pyboard.
 
-### Potential Servo implementation ideas
-
-### top level servo pool
-# servos = Servo_pool(update_rate, Servo_pool.SOFTWARE) # optional rate in Hz
-# servos.set_desired_update_rate(freq_in_Hz)
-# servos.update_rate() # actual update rate
-## 
-# s1 = servos.add(pin, serrvoargs)
-# s1.setup(min_width, detent_width, max_width)
-# s1.move(percent) # set pulse width for this percent
-# s1.remove() # deletes servo from pool
-## Optionally if angle is important.
-# s1.set_angles(min, max) # set angle values for rotate function
-# s1.rotate(angle)
-
-import Servo_ISR # C lib which exposes interrupt request routine for servos.
-# has:
-# - isr = Servo_ISR(type)  # creates a non-runing interrupt service routine for Servos (h/w or s/w)
-# - Servo_ISR.start()      #
-# - Servo_ISR.stop()       #
-# - Servo_ISR.set_rate(Hz) # ISR will interrupt at this rate
-# - Servo_ISR.set_active(pin_width_pairs) # list of python class variables of pin, pulse_width pairs
-#                                          - E.g. [[s1.pin, s1.value], [s2.pin, s2.value]]
-# - When started this ISR routine will step through the list one pair at each interrupt.
-#   Setting the pin to active high pulse of that width in usecs
-#   H/w interrupt wil exit very quickly as pulse happens without its attention
-#   S/w interrupt wil need to wait or trigger itself to come back and switch pulse off at right time.
-
-class Servo_pool(object):
-    SOFTWRE = 0
-    HARDWARE = 1
-    
-    def __init__(self, update_rate=50, ISR_type=Servo_pool.HARDWARE):
-        " holds all servos, allocates to ISRs "
-        self.pool = []
-        self.desired_rate = update_rate # user wants this rate
-        self.rate = update_rate         # the rate we can actually do (may be lower than desired)
-        self.isrs = []
-
-    class ISR(self):
-        """ holds a number of servos - externally managed
-            - rate is in Hz
-        """
-        IDLE = 0
-        STARTED = 1
-        
-        def __init__(self, rate, ISR_type):
-            self.isr_type = ISR_type
-            self.my_servos = []
-            self.pin_width_pairs = []
-            self.state = ISR.IDLE
-            self.isr = Servo_ISR(ISR_type)
-            self.rate = rate
-            self.set_rate(rate)
-
-        def add_servo(self, servo):
-            " "
-            self.my_servos.append(servo) 
-            self.pin_width_pairs.append([servo.pin, servo.value])
-            
-        def remove_servo(self, servo):
-            " "
-            self.my_servos.pop(servo)
-            pos = self.pin_width_pairs.index([servo.pin, servo.value])
-            self.pin_width_pairs.pop(pos)
-            # !! deal with empty my_servos
-
-        def start(self):
-            self.isr.start()
-            self.state = ISR.STARTED
-            
-        def stop(self):
-            self.isr.stop()
-            self.state = ISR.IDLE
-
-        def set_rate(self, rate):
-            self.isr.set_rate(rate) 
-            
-
-    def add(self, pin, *args, **kwargs):
-        s = Servo(self, pin, *args, **kwargs)
-        self.pool.append(s) # !! check for existing etc...
-        # do we have enough ISRs
-        # add servo to ISR's my_servos list
-        # !! should we degrade update_rate ?
-        if not self.isrs:
-            isr = ISR(self.rate, self.isr_type)
-            self.isrs.append(isr)
-        else:
-            if self.need_new_isr_p():
-                isr = ISR(self.rate, self.isr_type)
-                self.isrs.append(isr)
-            else: # use existing (last)
-                isr = self.isrs[-1]
-        #
-        isr.add_servo(s)
-        if isr.state == ISR.IDLE:
-            isr.start() # we added one - lets go!
-        return s
-
-    def remove_servo(self, servo):
-        " servo wants itself removed form ISR routines and list of servos "
-        pass # !!
-
-    def need_new_isr_p(self):
-        " do we need a new isr "
-        # check to see if adding one more to latest isr group will bust interrupts
-        if len(self.isrs[-1]) * 3/100.0 > 10.0/self.desired_rate:
-            #rate will drop if we add - need new ISR
-            return True
-        else: return False
-    
-
-class Servo(object):
-    " hold servo settings "
-    def __init__(self, pool, pin, min_angle=-90, detent=0, max_angle=90, min_width=1000, detent_width=1500, max_width=2000):
-        self.pool = pool
-        self.pin = pin
-        self.min_width = min_width
-        self.detent_width = detent_width
-        self.max_width = max_width
-        #
-        self.detent = 0
-        self.min_angle = min_angle
-        self.max_angle = max_angle
-        #
-        self.value = detent_width  # pulse width used by ISR routine
-
-    def move(self, percent):
-        " move servo to this percent of range defined by angles"
-        # !! set self.value to pulse width needed.
-        # !! two linear interps - min-detent, detent-max
-        pass
-    def rotate(self, angle):
-        " move servo to angle as cal using min. max angles "
-        # !! set self.value to pulse width needed
-        # !! two linear interps - min-detent, detent-max
-        pass
-
-    def remove(self):
-        " take self out of servo pool "
-        self.pool.remove_servo(self)
- 
-```
