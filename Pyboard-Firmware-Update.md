@@ -33,7 +33,7 @@ Found DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=3, name="@Device Feature/0xF
 First, backup the original firmware:
 
 ```
-$ sudo dfu-util --alt 0 -U pyboard-original.dfu
+$ sudo dfu-util --alt 0 --upload pyboard-original.dfu -s:524288
 (...)
 Starting upload: [#######] finished!
 ```
