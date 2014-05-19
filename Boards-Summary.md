@@ -18,6 +18,6 @@ In addition to the pyboard the following have been identified as possibly suitab
 * [[Vortex86 ZERO|Board-Vortex86]] *(~$50 2013 USD)* 
 * [[Tiva TM4C123G Launchpad|Board-Tiva-TM4C123G-Launchpad]] *(~$13 2013 USD)*
 * [[OpenMV|Board-OpenMV]] *(not yet available)*
-* [[PIXY CMUcam5|Board-Pixy]] *(~$74 2013 USD)* - not yet available
+* [[PIXY CMUcam5|Board-Pixy]] *(~$74 2013 USD)*
 * [[Apogee V1.0|Board-Apogee-V1.0]] *(~$160 USD)* - same chip as pyboard
 * [[EA LPC4357|Board-EA-LPC4357]] *(~$99 2013 USD)*
