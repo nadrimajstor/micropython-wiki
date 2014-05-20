@@ -8,7 +8,7 @@ First, disconnect everything from your pyboard. Then connect the DFU pin with th
 
 ## Flashing
 
-# dfu-util
+### dfu-util
 
 First, install dfu-util via your package manager.
 
@@ -48,10 +48,10 @@ done parsing DfuSe file
 
 Disconnect the pyboard from USB and remove the jumper between the DFU and the 3.3v ports.
 
-# dfu-programmer
+### dfu-programmer
 
 Some other DFU programmer. TODO: Document.
 
-# On Windows
+### On Windows
 
 TODO: Document
