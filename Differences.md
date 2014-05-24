@@ -35,4 +35,5 @@ Known issues are essentially bugs, misfeatures, and omissions considered such, a
 1. ``collections.deque`` class is not implemented.
 1. ``memoryview`` object not implemented.
 1. Container slice assignment/deletion is only partially implemented. [#509](https://github.com/micropython/micropython/issues/509)
-1. Keyword and keyword-only arguments need more work [#466](https://github.com/micropython/micropython/issues/466), [#524](https://github.com/micropython/micropython/issues/524).
+1. Keyword and keyword-only arguments need more work [#466](https://github.com/micropython/micropython/issues/466), [#524](//github.com/micropython/micropython/issues/524).
+1. Only basic support for ``__new__`` method is available [#606](//github.com/micropython/micropython/issues/606), [#622](//github.com/micropython/micropython/issues/622).
