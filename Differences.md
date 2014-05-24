@@ -15,7 +15,7 @@ Some features don't cater for constrained systems, and at the same time are not 
 
 1. No unicode support is actually implemented. Python3 calls for strict difference between ``str`` and ``bytes`` data types (unlike Python2, which has neutral unified data type for strings and binary data, and separates out unicode data type). MicroPython faithfully implements ``str``/``bytes`` separation, but currently, underlying ``str`` implementation is the same as ``bytes``. This means strings in MicroPython are not unicode, but 8-bit characters (fully binary-clean).
 1. Object finalization (``__del__()`` method) is supported for builtin types, but not yet user classes. This is tracked by [#245](//github.com/micropython/micropython/issues/245).
-1. It's not possible to subclass builtin types. [#401](//github.com/micropython/micropython/issues/401)
+1. Subclassing of builtin types is partially implemented, but there may be various differences and compatibility issues with CPython. [#401](//github.com/micropython/micropython/issues/401)
 
 ## Known Issues
 Known issues are essentially bugs, misfeatures, and omissions considered such, and scheduled to be fixed. So, ideally any entry here should be accompanied by bug ticket reference. But note that these known issues will have different priorities, especially within wider development process. So if you are actually affected by some issue, please add details of your case to the ticket (or open it if does not yet exist) to help planning. Submitting patches is even more productive. (Please note that the list of not implemented modules/classes include only those which are considered very important to implement; per the above, MicroPython does not provide full standard library in general.)
