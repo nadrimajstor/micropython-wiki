@@ -34,5 +34,5 @@ Known issues are essentially bugs, misfeatures, and omissions considered such, a
 1. Only beginning of ``io`` module and class hierarchy exists so far.
 1. ``collections.deque`` class is not implemented.
 1. ``memoryview`` object not implemented.
-1. Container slice assignment/deletion not implemented. [#509](https://github.com/micropython/micropython/issues/509)
+1. Container slice assignment/deletion is only partially implemented. [#509](https://github.com/micropython/micropython/issues/509)
 1. Keyword and keyword-only arguments need more work [#466](https://github.com/micropython/micropython/issues/466), [#524](https://github.com/micropython/micropython/issues/524).
