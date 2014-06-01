@@ -16,6 +16,15 @@ Damien gave me a hint, and told me to put the performance test inside a function
 
 On pyboard it's 2,890,723
 
+2nd pyboard test... WinXP SP3 4GB, PuTTY, and Samsung ECC1DU6BBE Micro-USB data cable with the shipped kickstarter board in `pyb.usb_mode('CDC+MSC') # act as a serial and a storage device` with performanceTest.py housed on internal memory(0:):
+```
+Micro Python v1.0.1 on 2014-05-12; PYBv1.0 with STM32F405RG
+Type "help()" for more information.
+>>> import performanceTest
+>>> performanceTest.performanceTest()
+Count:  2122667
+```
+
 ***
 
 **C++ on Teensy 3.1: (96Mhz ARM)**
