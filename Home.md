@@ -4,6 +4,8 @@ This is the [Micro Python](http://micropython.org/) project, which puts an imple
 This wiki is to support development of the Micro Python core code and the various ports to new hardware.
 The users guide on how to use Micro Python, and all user oriented library and module information, is on the [main Micro Python site](http://micropython.org/).
 
+![micropython-logo](https://avatars1.githubusercontent.com/u/6298560?s=140 '"micro" the project mascot')
+
 ###What is Micro Python
 Micro Python is Python interpreter (with partial native code emission feature). It provides subset of Python 3.3 features, implemented for embedded processors and constrained systems.
 
