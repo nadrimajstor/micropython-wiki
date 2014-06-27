@@ -11,8 +11,9 @@ That's unheard of. In uPy, garbage collection exactly runs when memory allocator
 
 ## Lua language (mis)features.
 
+1. Doesn't error out on usage on invalid and non-existent variables, returns legitimate value for such.
 1. Numeric type is single, forced float. Inefficient w/o floating-point hardware (eLua works around by offering integer-only version, which then cannot support float). Problem with bitwise logical operations. Etc, etc.
-2. Container type is single, associative array (called "table"). (Latest version of Lua work that around by providing dynamic array-vs-map switching underneath.) Multiple issues due to this, like array indexing starting from arbitrary number rather than zero, "length" of table not always corresponding to number of elements in it, etc.
-3. Funky OO syntax, like obj:close().
-4. No exceptions, instead pseudo-functional workaround, pcall() and friends. (Also goto in Lua 5.2)
+1. Container type is single, associative array (called "table"). (Latest version of Lua work that around by providing dynamic array-vs-map switching underneath.) Multiple issues due to this, like array indexing starting from arbitrary number rather than zero, "length" of table not always corresponding to number of elements in it, etc.
+1. Funky OO syntax, like obj:close().
+1. No exceptions, instead pseudo-functional workaround, pcall() and friends. (Also goto in Lua 5.2)
 
