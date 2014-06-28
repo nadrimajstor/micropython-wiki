@@ -29,7 +29,7 @@ Known issues are essentially bugs, misfeatures, and omissions considered such, a
 1. Some more advanced usages of package/module importing is not yet fully implemented. [#298](//github.com/micropython/micropython/issues/298)
 1. <strike>Exception handling with generators is not fully implemented.</strike> (Some small details may need to be done yet.) [#243](//github.com/micropython/micropython/issues/243)
 1. str.format() may miss few advanced/obscure features (but otherwise almost completely implemented). [#407](//github.com/micropython/micropython/issues/407), [#574](//github.com/micropython/micropython/issues/574)
-1. % string formatting operator may miss more advanced features [#403](//github.com/micropython/micropython/issues/403), [#574](//github.com/micropython/micropython/issues/574)
+1. <strike>% string formatting operator may miss more advanced features</strike> [#403](//github.com/micropython/micropython/issues/403), [#574](//github.com/micropython/micropython/issues/574)
 1. ``struct`` module should have all functionality, but misses some syntactic sugar (like repetition specifiers in type strings).
 1. No builtin``re`` module implementation. micropython-lib offers the initial PCRE FFI module for "unix" port [#13](//github.com/micropython/micropython/issues/13)
 1. Only beginning of ``io`` module and class hierarchy exists so far.
