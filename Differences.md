@@ -1,4 +1,4 @@
-This page is a proof-of-concept effort to document the differences between CPython3 (the most popular and most-used implementation of the Python3 language) and MicroPython. It classifies differences into 3 categories, each category having a different status regarding the possibility that items belonging to it will change.
+This page is a proof-of-concept effort to document the differences between CPython3 (considered to be a reference implementation of the Python3 language) and MicroPython. It classifies differences into 3 categories, each category having a different status regarding the possibility that items belonging to it will change. 
 
 ## Differences By Design
 MicroPython is intended for constrained environments, in particular, microcontrollers, which have orders of magnitude less performance and memory than "desktop" systems on which CPython3 runs. This means that MicroPython must be designed with this constrained environment in mind, leaving out features which simply won't fit, or won't scale, with target systems. "By design" differences are unlikely to change.
