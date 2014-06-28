@@ -39,3 +39,4 @@ Known issues are essentially bugs, misfeatures, and omissions considered such, a
 1. 3-argument slicing is only partially implemented.
 1. <strike>Keyword and keyword-only arguments need more work</strike> [#466](https://github.com/micropython/micropython/issues/466), [#524](//github.com/micropython/micropython/issues/524).
 1. Only basic support for ``__new__`` method is available [#606](//github.com/micropython/micropython/issues/606), [#622](//github.com/micropython/micropython/issues/622).
+1. Bitwise operations on long ints are only partially implemented (x & 0xffffffff idiom for casting signed 32-bit value to unsigned works).
