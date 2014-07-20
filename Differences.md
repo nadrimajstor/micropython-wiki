@@ -16,7 +16,7 @@ Some features don't cater for constrained systems, and at the same time are not 
 1. Unicode support is work in progress. It is based on internal representation using UTF-8. Strings containing Unicode escapes in the \xNN, \uNNNN, and \U000NNNNN forms are fully supported; \N{...} is not supported. #695.
 1. Object finalization (``__del__()`` method) is supported for builtin types, but not yet user classes. This is tracked by [#245](//github.com/micropython/micropython/issues/245).
 1. Subclassing of builtin types is partially implemented, but there may be various differences and compatibility issues with CPython. [#401](//github.com/micropython/micropython/issues/401)
-1. Buffered I/O streams (io.TextIOWrapper and superclasses) are not supported. Their support is required for enablement of Unicode.
+1. Buffered I/O streams (io.TextIOWrapper and superclasses) are not supported.
 
 ## Known Issues
 Known issues are essentially bugs, misfeatures, and omissions considered such, and scheduled to be fixed. So, ideally any entry here should be accompanied by bug ticket reference. But note that these known issues will have different priorities, especially within wider development process. So if you are actually affected by some issue, please add details of your case to the ticket (or open it if does not yet exist) to help planning. Submitting patches is even more productive. (Please note that the list of not implemented modules/classes include only those which are considered very important to implement; per the above, MicroPython does not provide full standard library in general.)
