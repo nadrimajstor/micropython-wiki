@@ -13,9 +13,9 @@ To perform a soft-reset, a connection to the board via a serial console program 
 
 Note, since micropython executes the start-up files (e.g. main.py) there will be no micropython prompt.
 
-Pressing `Ctrl-D` will interrupt the micropython execution and drops back into an interactive micropython shell. 
+Pressing `Ctrl-C` will interrupt the micropython execution and drops back into an interactive micropython shell. 
 
-Pressing `Ctrl-C` will terminate the interactive micropython shell and soft-reset the controller to restart the start-up files.
+Pressing `Ctrl-D` will terminate the interactive micropython shell and soft-reset the controller to restart the start-up files.
 
 ### Further improvements
 One can send those commands to the serial connection of the board to achieve the same result (make sure you have write permissions).
