@@ -10,3 +10,5 @@ Cortex M4 STM32F415RG
 
 ###Status###
 No work has yet been done on porting to this chip
+
+Note: DFU do not work because boot0 pin tied to ground. See also [this](http://www.mikroe.com/forum/viewtopic.php?f=12&t=54320) and [MINI-M4 Schematic](http://www.mikroe.com/downloads/get/1946/mini_m4_stm32_user_manual.pdf).
