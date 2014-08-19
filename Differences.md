@@ -14,7 +14,7 @@ MicroPython is intended for constrained environments, in particular, microcontro
 ## Implementation Differences
 Some features don't cater for constrained systems, and at the same time are not easy to implement efficiently, or at all. Such features are known as "implementation differences" and some of them are potentially the subject for future development (after corresponding discussion and consideration). Note that many of them would affect the size and performance of any given MicroPython implementation, so sometimes not implementing a specific feature is identified by MicroPython's target usage.
 
-1. Unicode support is work in progress. It is based on internal representation using UTF-8. Strings containing Unicode escapes in the \xNN, \uNNNN, and \U000NNNNN forms are fully supported; \N{...} is not supported. #695.
+1. Unicode support is work in progress. It is based on internal representation using UTF-8. Strings containing Unicode escapes in the \xNN, \uNNNN, and \U000NNNNN forms are fully supported; \N{...} is not supported. [#695](//github.com/micropython/micropython/issues/695).
 1. Object finalization (``__del__()`` method) is supported for builtin types, but not yet user classes. This is tracked by [#245](//github.com/micropython/micropython/issues/245).
 1. Subclassing of builtin types is partially implemented, but there may be various differences and compatibility issues with CPython. [#401](//github.com/micropython/micropython/issues/401)
 1. Buffered I/O streams (io.TextIOWrapper and superclasses) are not supported.
