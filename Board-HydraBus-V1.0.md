@@ -12,3 +12,8 @@ Cortex M4F
 * Reset & User Button with User Led (can be disabled to reuse I/O for other stuff).
 * Breakout of all 44 I/O (some are used by MicroSD and USB 1&2).
 * Micro Python firmware ported to HydraBus see HydraBus Micro Python github: https://github.com/bvernoux/hydrabus/tree/master/firmware/micropython and available in official branch https://github.com/micropython/micropython
+
+###Status###
+Initial port completed with same feature as PyBoard except only 1 LED is available.
+
+To build see https://github.com/bvernoux/hydrabus/tree/master/firmware/micropython.
