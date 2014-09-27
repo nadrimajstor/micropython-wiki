@@ -14,6 +14,8 @@ Cortex M4F
 * Micro Python firmware ported to HydraBus see HydraBus Micro Python github: https://github.com/bvernoux/hydrabus/tree/master/firmware/micropython and available in official branch https://github.com/micropython/micropython
 
 ###Status###
-Initial port completed with same feature as PyBoard except only 1 LED is available.
+Initial port completed with same feature as PyBoard with following exceptions:
+* Only 1 LED is available (later update combined with HydraNFC Shield, 4 LEDs will be available).
+* No accelerometer (but can be mounted on a breadboard or by doing a custom board see CC BY-SA 4.0 open hardware extension template for HydraBus: https://github.com/bvernoux/hydrabus/tree/master/hardware/HydraBus_1_0_Shield_Template_Rev0)
 
 To build see https://github.com/bvernoux/hydrabus/tree/master/firmware/micropython.
