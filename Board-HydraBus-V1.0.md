@@ -11,4 +11,4 @@ Cortex M4F
 * MicroSD slot with 4bit SD and SDIO mode support in hardware (up to 48MHz about 24MB/s).
 * Reset & User Button with User Led (can be disabled to reuse I/O for other stuff).
 * Breakout of all 44 I/O (some are used by MicroSD and USB 1&2).
-* Micro Python firmware ported to HydraBus see HydraBus Micro Python github: https://github.com/bvernoux/hydrabus/tree/master/firmware/micropython
+* Micro Python firmware ported to HydraBus see HydraBus Micro Python github: https://github.com/bvernoux/hydrabus/tree/master/firmware/micropython and available in official branch https://github.com/micropython/micropython
