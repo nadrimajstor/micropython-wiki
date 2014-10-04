@@ -1,7 +1,7 @@
 Cortex M4
 * Olimex STM32-E407 https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware
 
-like the H407, but with Ethernet PHY chip and jack
+The E407 is like the [Olimex H407](https://github.com/micropython/micropython/wiki/Board-Olimex-STM32-H407), but with Ethernet PHY chip and jack.
 
 ###Features###
 * open source hardware
@@ -18,4 +18,10 @@ like the H407, but with Ethernet PHY chip and jack
 * Arduino platform with unsoldered headers
 
 ###Status###
-Preliminary support is in https://github.com/markushx/micropython . Untested.
+Preliminary support is in https://github.com/markushx/micropython/tree/olimex-e407. Untested.
+
+###Build instructions###
+Follow https://github.com/micropython/micropython/wiki/Getting-Started-STM.
+
+    BOARD=OLIMEX_E407 make
+    dfu-util -d 0483:df11 -a 0 -D build-OLIMEX_E407/firmware.dfu
