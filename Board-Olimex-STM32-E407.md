@@ -18,4 +18,4 @@ like the H407, but with Ethernet PHY chip and jack
 * Arduino platform with unsoldered headers
 
 ###Status###
-No work has yet been done on porting to this chip
+Preliminary support is in https://github.com/markushx/micropython . Untested.
