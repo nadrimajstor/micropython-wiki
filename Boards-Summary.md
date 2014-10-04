@@ -9,6 +9,7 @@ In addition to the pyboard the following have been identified as possibly suitab
 * [[Arduino Due|Board-Arduino-Due]] *(~$56 2013 USD)* 
 * [[Teensy 3.1|Board-Teensy3.1]] *(~$20 2013 USD)* - **started**
 * [[Digi-X|Board-Digi-X]] *(~$60 2013 USD)* 
+* [[Olimex STM32-E407|Board-Olimex-STM32-E407]] *(~E40 2014 EUR)* 
 * [[Olimex STM32-H407|Board-Olimex-STM32-H407]] *(~E30 2013 EUR)* 
 * [[Olimex STM32-405STK|Board-Olimex-STM32-405STK]] *(~E45 2013 EUR)* - same chip as pyboard
 * [[Mikroe mini M4|Board-Mikroe-mini-M4]] *(~$30 2013 USD)*
