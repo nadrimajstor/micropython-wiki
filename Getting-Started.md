@@ -115,6 +115,8 @@ At that point, you will have a functioning micropython executable, which may be 
 
 ### Mac OSX
 
+Dependencies are listed on [OSX Tips and Tricks]( https://github.com/micropython/micropython/wiki/OSX-Tips-and-Tricks)
+
 The XCode and Command Line Developer Tools package will need to be installed before you can compile and run MicroPython:
 
 > xcode-select --install
