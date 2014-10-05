@@ -7,11 +7,11 @@ This article is targeted towards micropython developers using OSX, it will addre
 Recent modifications to the build scripts have made the build process for the unix port on OSX the same as it is that on Linux, despite the fact that Micro Python is built using gcc on Linux and clang on OSX.
 In order to compile on OSX you will need the following software packages installed:
 * A relatively recent version of Xcode to provide the clang compiler (micropython has been confirmed to compile under clang versions 3.1 and 4.2)
-* libffi (minimum version 3.1-4 from Macports)
-* pkgconfig
-* Python >= 3.3
+* [Macports](www.macports.org) for the next commands
+* libffi (minimum version 3.1-4 from Macports) ```sudo port install libffi```
+* pkgconfig ```sudo port install pkgconfig```
+* Python >= 3.3 ```sudo port install python34```
 * git - to keep local source tree up to date
-* (TODO: others?)
 
 ## Build Process
 Same as on Linux - go to ```micropython/unix``` and run ```make``` (or ```make -B``` or ```make clean; make``` if rebuilding.
