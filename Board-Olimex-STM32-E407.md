@@ -23,5 +23,6 @@ Preliminary support is in https://github.com/markushx/micropython/tree/olimex-e4
 ###Build instructions###
 Follow https://github.com/micropython/micropython/wiki/Getting-Started-STM.
 
+    cd stmhal
     BOARD=OLIMEX_E407 make
     dfu-util -d 0483:df11 -a 0 -D build-OLIMEX_E407/firmware.dfu
