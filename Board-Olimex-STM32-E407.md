@@ -20,9 +20,17 @@ The E407 is like the [Olimex H407](https://github.com/micropython/micropython/wi
 ###Status###
 Preliminary support is in https://github.com/markushx/micropython/tree/olimex-e407. Untested.
 
+###Jumpers###
+
+For programming the board, the jumpers on the board need to be set as in the following picture:
+![](https://github.com/markushx/micropython/blob/olimex-e407/stmhal/boards/OLIMEX_E407/doc/Olimex-Pyb-Programming.jpg)
+
 ###Build instructions###
 Follow https://github.com/micropython/micropython/wiki/Getting-Started-STM.
 
     cd stmhal
     BOARD=OLIMEX_E407 make
     dfu-util -d 0483:df11 -a 0 -D build-OLIMEX_E407/firmware.dfu
+
+###Running micropython on the board###
+Change the top right jumper from the left to the right position and power up the board.
