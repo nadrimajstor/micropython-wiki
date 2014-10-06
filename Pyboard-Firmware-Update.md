@@ -30,7 +30,8 @@ Found DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=2, name="@OTP Memory /0x1FFF
 Found DFU: [0483:df11] devnum=0, cfg=1, intf=0, alt=3, name="@Device Feature/0xFFFF0000/01*004 e"
 ```
 
-First, backup the original firmware:
+If desired, backup the original firmware (this doesn't work with dfu-util 0.5, but does with 0.7 or newer).
+Previous releases of micropython are available from: http://micropython.org/download/ so performing a backup should be unecessary.
 
 ```
 $ sudo dfu-util --alt 0 --upload pyboard-original.dfu -s:524288
