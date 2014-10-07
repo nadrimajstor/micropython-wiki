@@ -47,6 +47,6 @@ TODO: using screen to access REPL
 ```screen /dev/tty.usbmodem*```
 Exit from screen using Ctl-a, k; answer 'y' to exit
 
-Workflow on mac is now same as for Linux; link to recommended workflow wiki page
+Workflow on mac is now same as for Linux; link to [DevelWorkflow](DevelWorkflow), the recommended workflow wiki page
 
 TODO: Issues that may be encountered using previous versions of pyboard firmware (USB mass storage issue) that can be fixed with firmware upgrade
