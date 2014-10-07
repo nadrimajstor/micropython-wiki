@@ -1,2 +1,1 @@
-Article moved and renamed [Micro Python on Mac OSX](Micro Python on Mac OSX), leaving this page in place as a temporary redirect.
-(unfortunately the edit history for the original article was lost in that process)
+Article moved and renamed [Micro Python on Mac OSX](Micro Python on Mac OSX), leaving this page in place as a temporary redirect and to retain edit history for the original article.
