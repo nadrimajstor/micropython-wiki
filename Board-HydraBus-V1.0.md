@@ -6,7 +6,7 @@ Cortex M4F
 ###Features###
 * Standard Dangerous Prototypes PCB size DP6037_v1 (see http://dangerousprototypes.com/docs/Sick_of_Beige_basic_case_v1) (very small 60mm x 37mm size).
 * Programming firmware through USB DFU (without any debugger) with USB1 FS.
-* Debug/Programming through low cost SWD Debug connector (can be programmed/debugged using a low cost STM32F4 Discovery board for less than 20US$).
+* Debug/Programming through low cost SWD Debug connector (can be programmed/debugged using a low cost STM32F4 Discovery board/NUCLEO for less than 20US$).
 * Two MicroUSB port (1 OTG and 1 Device/Host) with ESD protection.
 * MicroSD slot with 4bit SD and SDIO mode support in hardware (up to 48MHz about 24MB/s).
 * Reset & User Button with User Led (can be disabled to reuse I/O for other stuff).
