@@ -51,11 +51,11 @@ On the discovery board, BOOT1 is pulled low through SB19 and a 510 ohm resistor,
 
 You should now be able to program the board using:
 ```
-dfu-util -a 0 -D build/flash.dfu
+sudo dfu-util -a 0 -D build-STM32F4DISC/firmware.dfu
 ```
 and you should get output similar to this:
 ```
-2196 >dfu-util -a 0 -D build/flash.dfu
+2196 >sudo dfu-util -a 0 -D build-STM32F4DISC/firmware.dfu
 dfu-util 0.5
 
 (C) 2005-2008 by Weston Schmidt, Harald Welte and OpenMoko Inc.
