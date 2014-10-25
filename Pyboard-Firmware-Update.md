@@ -47,7 +47,17 @@ $ sudo dfu-util --alt 0 -D pybv10-2014-05-19-v1.0.1-24-g5cdff5f.dfu
 done parsing DfuSe file
 ```
 
-Disconnect the pyboard from USB and remove the jumper between the DFU and the 3.3v ports.
+> **NOTE:**
+>
+> If you have other DFU capable devices connected to you machine (*for example an Apple Magic Mouse*), and you receive the following message:
+>
+> `More than one DFU capable USB device found, you might try '--list' and then disconnect all but one device`
+>
+> you may want to disconnet all other devices, or specify which device's firmware you want to edit by passing either `--device` or the shorter `-d` flag to `dfu-util`. Example:
+>
+> `$ sudo dfu-util --alt 0 -D pybv10-2014-05-19-v1.0.1-24-g5cdff5f.dfu -d 0483`
+
+After the the program finished, disconnect the pyboard from USB and remove the jumper between the DFU and the 3.3v ports.
 
 ### dfu-programmer
 
