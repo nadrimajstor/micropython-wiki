@@ -15,11 +15,12 @@ The following packages will need to be installed before you can compile and run 
 
 * build-essential
 * libreadline-dev
+* libffi-dev
 * git
 
 To install these packages, use the following command:
 
-> sudo apt-get install build-essential libreadline-dev git
+> sudo apt-get install build-essential libreadline-dev libffi-dev git
 
 Then, clone the repository to your local machine:
 
