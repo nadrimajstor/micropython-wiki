@@ -5,7 +5,7 @@ Cortex M4 STM32F407VG
 ###Features###
 * STM32F407VG 168MHz (100pin)
 * 1024KB flash ROM, 192KB RAM
-* 3axis accelerometer LIS302DL
+* 3axis accelerometer LIS302DL or LIS3DSH (Depending on which revision Discovery board you have)
 * mems microphopne MP45DT02, audio amp CS43L22
 * 4 user LEDs
 * 1 user switch
@@ -13,7 +13,7 @@ Cortex M4 STM32F407VG
 * USB OTG
 
 ###Status###
-* Initial support has been implemented, user switch and LEDs are supported.
+* Initial support has been implemented, user switch, accelerometer, and LEDs are supported.
 * Does not have separate directory - folded into initial stm port.
 * To build use one of the following methods:
    1. ```make BOARD=STM32F4DISC```
