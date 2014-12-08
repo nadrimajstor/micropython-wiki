@@ -33,10 +33,10 @@ Known issues are essentially bugs, misfeatures, and omissions considered such, a
 1. str.format() may miss few advanced/obscure features (but otherwise almost completely implemented). [#407](//github.com/micropython/micropython/issues/407), [#574](//github.com/micropython/micropython/issues/574)
 1. <strike>% string formatting operator may miss more advanced features</strike> [#403](//github.com/micropython/micropython/issues/403), [#574](//github.com/micropython/micropython/issues/574)
 1. ``struct`` module should have all functionality, but misses some syntactic sugar (like repetition specifiers in type strings).
-1. No builtin``re`` module implementation. micropython-lib offers the initial PCRE FFI module for "unix" port [#13](//github.com/micropython/micropython/issues/13)
+1. Instead of ``re`` module, minimified "ure" module is provided is subset of functionality. micropython-lib also offers more complete implementation based on PCRE engine, for "unix" port [#13](//github.com/micropython/micropython/issues/13)
 1. Only beginning of ``io`` module and class hierarchy exists so far.
 1. ``collections.deque`` class is not implemented.
-1. ``memoryview`` object not implemented.
+1. <strike>``memoryview`` object not implemented.</strike>
 1. Container slice assignment/deletion is only partially implemented. [#509](https://github.com/micropython/micropython/issues/509)
 1. 3-argument slicing is only partially implemented.
 1. <strike>Keyword and keyword-only arguments need more work</strike> [#466](https://github.com/micropython/micropython/issues/466), [#524](//github.com/micropython/micropython/issues/524).
