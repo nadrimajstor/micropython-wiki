@@ -51,9 +51,18 @@ On the discovery board, BOOT1 is pulled low through SB19 and a 510 ohm resistor,
 
 You should now be able to program the board using:
 ```
-sudo dfu-util -a 0 -D build-STM32F4DISC/firmware.dfu
+make BOARD=STM32F4DISC deploy
 ```
-and you should get output similar to this:
+If your permissions aren't setup properly for the udev rules above, then you should be able to use
+```
+sudo make BOARD=STM32F4DISC deploy
+```
+Note: The deploy target in the makfile will wind up executing a command similar to this:
+```
+dfu-util -a 0 -d 0483:df11 -D build-STM32F4DISC/firmware.dfu
+```
+
+You should get output similar to this:
 ```
 2196 >sudo dfu-util -a 0 -D build-STM32F4DISC/firmware.dfu
 dfu-util 0.5
