@@ -28,7 +28,7 @@ This section covers how to flash the STM32F4DISCOVERY from linux (I was using Li
 sudo apt-get install dfu-util
 ```
 
-* Create a udev rules file. I used ```sudo vi /etc/udev/49-stmdiscovery.rules``` and put the following contents:
+* Create a udev rules file. I used ```sudo vi /etc/udev/rules.d/49-stmdiscovery.rules``` and put the following contents:
 ```
 # f055:9800 - STM32F4 Discovery running MicroPython in USB Serial Mode (CN5)
 ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", ENV{ID_MM_DEVICE_IGNORE}="1"
@@ -42,6 +42,7 @@ Tell udev to reload its rules:
 ```
 sudo udevadm control --reload-rules
 ```
+* NOTE: After reloading udev rules, if your board is already plugged in, then you need to unplug it and replug it in order to trigger the new udev rules.
 
 * Plug in the discovery board. To use DFU, you need to connect CN5 (the micro-USB connector on the bottom of the board) into your PC. Unfortunately, the CN5 connector doesn't power the board, so you can either connect CN1 (mini-USB connector at the top of the board), or run a jumper wire from PA9 to 5V (PA9 connects to VBUS on CN5) in order to power the board. CN1 connects to the STM32F103 chip near the mini connector in order to support stlink. CN5 connects to the STM32F407 chip.
 
