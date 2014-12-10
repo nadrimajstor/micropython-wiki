@@ -14,7 +14,7 @@ Cortex M4 STM32F407VG
 
 ###Status###
 * Initial support has been implemented, user switch, accelerometer, and LEDs are supported.
-* Does not have separate directory - folded into initial stm port.
+* Does not have separate directory - folded into initial stm port (so this means that you be executing the make command from inside the stmhal directory).
 * To build use one of the following methods:
    1. ```make BOARD=STM32F4DISC```
    1. ```export BOARD=STM32F4DISC``` in your environment and then just use make.
