@@ -1,6 +1,6 @@
 # What to contribute
 
-MicroPython is named "Micro" for a reason. We don't want to compete with CPython or replace it. We could spend year of development and do everything what CPython can do, just in 50% of size. It's not worthy an aim. If you want all CPython functionality, you can use CPython right now. What we try to achieve with MicroPython is being order(s) of magnitude smaller than CPython, to use Python (the language) where CPython could not be used at all. This necessitates being a CPython subset, making compromises for what can go into MicroPython core, and then stay orthodox about these compromises.
+MicroPython is named "Micro" for a reason. We don't want to compete with CPython or replace it. We could spend years of development and implement everything what CPython can do, just in 50% of size. It's not worthy an aim. If you want all CPython functionality, you can use CPython right now. What we try to achieve with MicroPython is being order(s) of magnitude smaller than CPython, to use Python (the language) where CPython could not be used at all. This necessitates being a CPython subset, making compromises for what can go into MicroPython core, and then stay orthodox about these compromises.
 
 Here are more specific examples:
 
