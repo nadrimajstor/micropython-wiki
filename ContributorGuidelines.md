@@ -2,6 +2,14 @@
 
 MicroPython is named "Micro" for a reason. We don't want to compete with CPython or replace it. We could spend year of development and do everything what CPython can do, just in 50% of size. It's not worthy an aim. If you want all CPython functionality, you can use CPython right now. What we try to achieve with MicroPython is being order(s) of magnitude smaller than CPython, to use Python (the language) where CPython could not be used at all. This necessitates being a CPython subset, making compromises for what can go into MicroPython core, and then stay orthodox about these compromises.
 
+Here are more specific examples:
+
+1. For microcontroller case, reference MicroPython implementation runs on a pretty big MCU. But we would like to maintain portability to much smaller MCU cores. The theorhetical minimum requirements we'd like to maintain are 128K ROM/8K RAM. Note that those are "raw hardware" requirements. In real-world case, part of ROM and RAM may be used for RTOS/supervisor, and that lowers requirements to 100K/4K respectively.
+
+2. It may seem that "unix" port would not be affected by such stringent requirements, and yet it is, because one of the usecase is running MicroPython on truly minimal Linux systems with just 4 or even 2Mb of flash, half of which is taken by kernel, remaining half by support utilities, and only mere hundreds of Ks are available for MicroPython, user apps and data. So, every byte is still accounted for.
+
+3. MicroPython is not the only small, embeddable language, so we need to stay competitive in this niche. Well-known small language is Lua, and we take it as assessment baseline. It's out belief that many people use Lua due to lack of better alternative. With MicroPython, there's now good alternative. But we don't want people to reject MicroPython because it's "much bigger" than Lua. Note that it's necessarily bigger, because Python provides more standardize and well-defined functionality. But we want to stay at "somewhat bigger", and not "much bigger" mark. Actually, we want to maintain "minimal" MicroPython configuration, which achieves sizes comparable, or better, than typical non-finetuned Lua build. 
+
 # Where to contribute
 
 We write MicroPython in C not to keep writing code in C. We write it to let us and everyone write code in Python. This should be good rule of thumb - anything which can be written in Python, should be written in Python, unless there're *really* good reasons to write it in C. 
