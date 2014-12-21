@@ -24,6 +24,8 @@ Summing up, you have 3 choices where to contribute with MicroPython development:
 * micropython-lib
 * Maintain your own module or port, as part of general MicroPython community  
 
+So, it is worth considering where some change fits better. It may be not immediately obvious either, so it may use some discussing, as described in the following section. 
+
 # How to contribute
 
 Please make sure you read previous sections to understand MicroPython philosophy and approach. We expect contributors will be aligned with them in general, because otherwise it would be hard to understand why specific change is proposed at all.
