@@ -1,3 +1,5 @@
+_This entire page is wildly out of date as Servo now implemented._
+
 This page is about a mechanism for controlling Hobby Servos. There are two main kinds of Hobby Servo. Analog and Digital. Both are controlled identically. Digital servos can be updated more frequently.
 
 For the complete list of servos and their specs you can't go past http://www.servodatabase.com/
