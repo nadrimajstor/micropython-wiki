@@ -30,7 +30,7 @@ Please make sure you read previous sections to understand MicroPython philosophy
 
 If you're not sure if some change would go along with MicroPython approach, please discuss this change first. We have 2 channels of communication:
 
-* Project tickets
+* [Project tickets](https://github.com/micropython/micropython/issues)
 * [Development forum](http://forum.micropython.org/viewforum.php?f=3)
 
 You may not agree with us on interpretation of specific feature, so please share your point of view, and be prepared to elaborate and argue it - we're here to listen, and discussion is the way to run projects. But at the same time please keep in mind that we necessarily have to be conservative to achieve (and not lose on the way) project aims as stated in "What to contribute" section, so we may suggest better destination to apply your change/effort to, per "Where to contribute" section.
