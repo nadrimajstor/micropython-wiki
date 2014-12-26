@@ -17,7 +17,7 @@ The Kickstarter board
 A list of other boards and their ports is here: **[[Other Boards|Boards-Summary]]**
 
 ### I want to try using micropython now!
-If you have a machine that runs some flavor of Unix, see the [[Getting-Started]] instructions on how to obtain the binary to run micropython and start developing.
+If you have a machine that runs some flavor of Unix, see the [[Getting-Started]] instructions on how to obtain the binary to run MicroPython and start developing. MicroPython can also built on MacOSX and Windows.
 
 ### Performance
 Some [[numbers|Performance]] from a very simple benchmark
