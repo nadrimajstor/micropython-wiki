@@ -25,6 +25,7 @@ Some [[numbers|Performance]] from a very simple benchmark
 ### Documentation
 
 * For introduction and tutorials on using MicroPython on Pyboard follow links on http://micropython.org/
+* Official documentation is at http://docs.micropython.org
 * MicroPython is an implementation of (subset of) Python language, so "Tutorial" and "Language Reference" sections of https://docs.python.org/3.4/ apply. (Note: only few, core library modules are provided with MicroPython, few more may be available as user-installable modules, so "Library Reference" applies only partially).
 * Ongoing effort to document [[Differences]] between CPython and MicroPython.
 
