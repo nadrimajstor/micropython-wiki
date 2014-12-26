@@ -30,8 +30,7 @@ Some [[numbers|Performance]] from a very simple benchmark
 * Ongoing effort to document [[Differences]] between CPython and MicroPython.
 
 #### The pyb module
-This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above will be supported. Support for more microcontrollers may be added in future releases.
-Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
+This module allows access to the internal peripherals of the microcontroller chip. Initially, the 405RG chip noted above is supported. Support for more microcontrollers may be added in future releases. Documentation: http://docs.micropython.org/en/latest/library/pyb.html
 
 ### Development
 * [[ContributorGuidelines]] - get to know MicroPython approach.
