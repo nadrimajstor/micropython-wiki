@@ -33,6 +33,7 @@ This module allows access to the internal peripherals of the microcontroller chi
 Some developer related information can be found here: [[pyb module|pyb module]]. But the user centric information is on the [main site](http://micropython.org/).
 
 ### Development
+* [[ContributorGuidelines]] - get to know MicroPython approach.
 * [[DevelWorkflow]] - suggested development workflow for contributors.
 * [[Internals]] - some notes on VM/interpreter internals.
 * [[Servos|Servos]] - how should we implement Servos
