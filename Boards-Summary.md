@@ -22,4 +22,4 @@ In addition to the pyboard the following have been identified as possibly suitab
 * [[PIXY CMUcam5|Board-Pixy]] *(~$74 2013 USD)*
 * [[Apogee V1.0|Board-Apogee-V1.0]] *(~$160 USD)* - same chip as pyboard
 * [[EA LPC4357|Board-EA-LPC4357]] *(~$99 2013 USD)*
-* [[HydraBus V1.0|Board-HydraBus-V1.0]] *(~$49 USD)* - same chip as pyboard - **started**
+* [[HydraBus V1.0|Board-HydraBus-V1.0]] *(~$49 USD)* - same chip as pyboard - **done**
