@@ -40,3 +40,12 @@ You may not agree with us on interpretation of specific feature, so please share
 We accept changes using Github pull requests, as the most seamless way for both ourselves and contributors. When you make commits for a change, please follow format of existing commit messages (use "git log" to review them). For considerable changes, we expect detailed, yet formal and concise description of the change in commit message. If you make 2 or more considerable changes, they should go in separate commits. The same applies to unrelated changes - for example, don't put formatting changes and actual code changes in one commit. 
 
 When you submit pull request, please make sure that it's understood why you propose this change: what problem it addresses, how it improves MicroPython (and at the same time, not deteriorates it, taking into account stringent constraints of "What to contribute" section). Good commit messages are easy way to achieve this, but sometimes it's better to put informal points, colloquial arguments and big examples in comments to pull request instead, to keep commit messages concise and focused.
+
+
+# "Django criteria"
+
+As an example of application of previous ideas, (semi-serious) "Django criteria" are introduced regarding adding new features, which are roughly superfluous, not overly important, or rather rare to use:
+
+* If you write your own code, and there's another way to achieve it with other existing features, please just do it this other way.
+* If you port existing code, you'll likely find out that a lot of features missing, so adding all of them will be a lot of work, and will bloat MicroPython, and adding just one of few won't make a big difference. (So, just keep *porting*, by patching existing code to use facilities MicroPython already provides.)
+* However, if you tried to run a big, well-known package, like Django, and found that only few features are missing to run it out of the box, without any patching, then we definitely would like to add them to be able claim that MicroPython can run Django ;-).
