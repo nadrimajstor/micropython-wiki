@@ -5,6 +5,7 @@ You can download the latest firmware from http://micropython.org/download/.
 ## Preparation
 
 First, disconnect everything from your pyboard. Then connect the DFU pin with the 3.3V pin (they're right next to each other) to put the board into DFU (*Device Firmware Update*) mode. Now connect the pyboard to your computer via USB.
+![DFU quick reference](wiki/images/pybv10b-DFU_quick_ref.png)
 
 ## Flashing
 
